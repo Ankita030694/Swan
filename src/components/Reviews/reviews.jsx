@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import review from '../../assets/Reviews.png';
-import review2 from "../../assets/newImages/19.jpg";
+import review2 from "../../assets/Swan2340.jpg";
 import google_reviews from "../../assets/google_review.jpeg";
 
 const bananaAnimation = {
