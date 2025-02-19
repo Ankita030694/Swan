@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./header.css";
+import bannervid from "../../../public/bannervid.mp4";
 
 // Import images
 // import hero from "../../assets/hero.png";
 import header7 from "/banners/banner.jpg";
 
-const images = [header7];
+const images = [bannervid];
 
 const Header = () => {
   const [boxesVisible, setBoxesVisible] = useState(true);
@@ -41,7 +42,7 @@ const Header = () => {
   return (
     <div className="relative h-screen">
       {/* Carousel */}
-      <Slider {...carouselSettings}>
+      {/* <Slider {...carouselSettings}>
         {images.map((image, index) => (
           <div key={index}>
             <img
@@ -51,7 +52,13 @@ const Header = () => {
             />
           </div>
         ))}
-      </Slider>
+      </Slider> */}
+      <video
+        src={bannervid}
+        className="w-full h-screen object-cover"
+        autoPlay
+        muted
+      ></video>
 
       {/* Initial Cover Boxes */}
       {boxesVisible && (

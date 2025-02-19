@@ -34,7 +34,7 @@ const NavbarTwo = () => {
     <div className="relative">
       {/* Main Navbar */}
       <nav
-        className={`h-28 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`h-21 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
             ? "bg-white shadow-md"
             : location.pathname === "/about"
@@ -77,27 +77,27 @@ const NavbarTwo = () => {
                 className={`px-4 py-2 rounded-lg transition-colors duration-300 ${
                   isScrolled
                     ? "px-6 font-medium border-2 rounded-full border-[#e07e90] text-[#000000] hover:bg-[#e07e90] hover:text-white "
-                    : "px-6 border-2 border-[#e07e90] border-[#000000] font-medium hover: text-[#000000] rounded-full"
+                    : "px-6 border-2 border-[#e07e90] border-[#000000] text-[#e07e90] font-medium hover:bg-[#e07e90] hover:text-white rounded-full"
                 }`}
               >
                 Call Us
               </a>
               <Link
                 to={"/reservation"}
-                className="px-4 py-2 bg-white font-medium rounded-lg text-[#e07e90]"
+                className="px-4 py-2 bg-[#e07e90] font-medium rounded-lg text-white border-white"
                 style={{
                   transition: "background-color 0.3s ease, border 0.3s ease",
-                  border: "2px solid black", // Default border is transparent
+                  border: "2px solid", // Default border is transparent
                 }}
                 onMouseEnter={(e) => {
                   e.target.style.backgroundColor = "#ffffff";
-                  e.target.style.borderColor = "#331c13"; // Add black border
+                  e.target.style.borderColor = "#ffffff"; // Add black border
                   e.target.style.color = "#e07e90";
                 }}
                 onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = "#ffffff"; // Reset background
-                  e.target.style.borderColor = "black"; // Reset border
-                  e.target.style.color = "#e07e90";
+                  e.target.style.backgroundColor = "#e07e90"; // Reset background
+                  e.target.style.borderColor = "#ffffff"; // Reset border
+                  e.target.style.color = "#ffffff";
                 }}
               >
                 Reservation
