@@ -77,7 +77,7 @@ const NavbarTwo = () => {
                 href="tel:+919870587770"
                 className={`px-4 py-2 rounded-lg transition-colors duration-300 ${
                   isScrolled
-                    ? "px-6 font-medium border-2 rounded-full border-[#e07e90] text-[#000000] hover:bg-[#e07e90] hover:text-white "
+                    ? "px-6 font-medium border-2 rounded-full border-[#e07e90] text-[#e07e90] hover:bg-[#e07e90] hover:text-white "
                     : "px-6 border-2 border-[#e07e90] border-[#000000] text-[#e07e90] font-medium hover:bg-[#e07e90] hover:text-white rounded-full"
                 }`}
               >

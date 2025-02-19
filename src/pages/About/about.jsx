@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className="relative">
       <NavbarTwo />  
-      <div className="w-full bg-white ">
+      <div className="w-full bg-white mt-5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
             <div className="aspect-[16/9] w-full overflow-hidden rounded-2xl">
