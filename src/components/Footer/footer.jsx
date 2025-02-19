@@ -6,7 +6,7 @@ import {
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa"; // Social icons
-import logo from "../../assets/logos/8.png";
+import logo from "../../assets/logos/logo.png";
 import { useNavigate, Link } from "react-router-dom";
 
 const navi = useNavigate;
@@ -57,7 +57,8 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Bo-Tai Logo"
-                className="h-12 mx-auto md:mx-0 m-5"
+                className="h-32 mx-auto md:mx-0 m-5"
+                style={{marginTop: "-30px"}}
               />
             </a>
             <p className="text-[#e07e90] mb-8">
