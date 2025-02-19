@@ -70,7 +70,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 const HeroSection = () => {
   return (
-    <div className="bg-brown-400 px-4 py-16 sm:py-20 relative overflow-hidden">
+    <div className="bg-[#e07e90] px-4 py-16 sm:py-20 relative overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="absolute left-0 top-0">
           <img
@@ -88,12 +88,12 @@ const HeroSection = () => {
         </div>
 
         <div className="relative z-10">
-          <h1 className="text-3xl sm:text-5xl text-center font-bold text-[#4A3427] mb-6 sm:mb-8">
-            BO-TAI
+          <h1 className="text-3xl sm:text-5xl text-center font-bold text-black mb-6 sm:mb-8">
+            Swan
           </h1>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-base sm:text-lg text-[#4A3427] leading-relaxed">
-             BO-TAI, DELHI
+            <p className="text-base sm:text-lg text-white leading-relaxed">
+             SWAN, DELHI
 
 Part of the renowned Massive Restaurants group, Bo-Tai is a modern Thai bar and grill that offers an exceptional dining experience. Known for its vibrant ambiance and innovative menu, Bo-Tai seamlessly blends Thai flavors with global influences. Whether you're savoring its exquisite cuisine or enjoying its chic setting, Bo-Tai is the perfect destination for those who appreciate culinary excellence and contemporary elegance
             </p>

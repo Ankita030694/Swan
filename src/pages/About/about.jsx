@@ -28,7 +28,7 @@ const About = () => {
             </div>
             
             <div className="absolute bottom-8 left-0 right-0 flex justify-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-orange-100 tracking-wider">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#e07e90] tracking-wider">
                 ABOUT US
               </h1>
             </div>
