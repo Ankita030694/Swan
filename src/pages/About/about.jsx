@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutheader from '../../assets/about.png';
+import aboutheader from '../../assets/about2.jpg';
 import TableReservation from '../../components/Reservation/reservationComponent';
 import OurLocation from '../../components/ourlocation/ourlocation';
 import AboutGallery from '../../components/AboutGallery/aboutgallery';
