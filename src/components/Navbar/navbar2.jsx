@@ -34,7 +34,7 @@ const NavbarTwo = () => {
     <div className="relative">
       {/* Main Navbar */}
       <nav
-        className={`h-21 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`h-21 left-0 right-0 z-50 transition-all duration-300 border-2 border-[#e07e90] ${
           isScrolled
             ? "bg-white shadow-md"
             : location.pathname === "/about"
