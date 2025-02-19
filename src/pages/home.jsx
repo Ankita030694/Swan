@@ -8,14 +8,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import ReservationBanner from "../components/Reservation/tablereservation";
 import BoTaiGallery from "../components/OurStory/gallery";
 import Lottie from "lottie-react";
-import loadingAnimation from "../assets/loader.json";
+import loadingAnimation from "../assets/swanloader.json";
 import NavbarTwo from "../components/Navbar/navbar2";
 const LoadingScreen = () => {
   return (
     <motion.div 
       className="fixed inset-0 flex items-center justify-center z-50 bg-loading-screen bg-cover bg-center"
       initial={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      exit={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
     >
       <div className="w-32 h-32">

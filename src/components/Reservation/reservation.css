@@ -15,3 +15,11 @@
   .PhoneInputCountryIconImg{
     display: none !important;
   }
+  .row{
+    display: flex;
+    flex-direction: row;
+  }
+  .col-md-6{
+    width: 50%;
+    height: 100vh;
+  }

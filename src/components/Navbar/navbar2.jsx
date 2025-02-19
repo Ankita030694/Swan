@@ -43,8 +43,9 @@ const NavbarTwo = () => {
             ? "bg-white"
             : "bg-white"
         }`}
+        
       >
-        <div className="max-w-7xl mx-auto p-2">
+        <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between">
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
@@ -54,7 +55,7 @@ const NavbarTwo = () => {
                   href={item.path}
                   target={item.newTab ? "_blank" : ""}
                   rel={item.newTab ? "noopener noreferrer" : ""}
-                  className={`text-sm font-medium transition-colors duration-300 ${
+                  className={`text-md font-medium transition-colors duration-300 ${
                     isScrolled
                       ? "text-[#e07e90] hover:text-[#000000]"
                       : "text-[#e07e90] font-medium hover:text-[#000000]"
