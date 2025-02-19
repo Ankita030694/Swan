@@ -58,12 +58,12 @@ const TableReservation = () => {
           viewport={{ once: true, amount: 0.3 }}
         >
           <div className="absolute bottom-0">
-            <motion.img
+            {/* <motion.img
               src={bowl}
               alt="Elegant dining"
               className="w-full"
               variants={scaleInVariants}
-            />
+            /> */}
           </div>
 
           <div className="relative h-[30vh] md:h-[50vh] z-10 ">
@@ -89,7 +89,7 @@ const TableReservation = () => {
                 whileTap="tap"
               >
                 <Link to="/reservation" className="text-white">
-                  Book a table
+                  Book a table Now
                 </Link>
               </motion.button>
             </motion.div>
