@@ -42,7 +42,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#e07e90] text-white pb-12">
+    <footer className="bg-white text-[#e07e90] pb-12">
       <div className="container mx-auto px-5">
         <div className="flex flex-wrap justify-around">
           {/* Logo and Description */}
@@ -60,7 +60,7 @@ const Footer = () => {
                 className="h-12 mx-auto md:mx-0 m-5"
               />
             </a>
-            <p className="text-white mb-8">
+            <p className="text-[#e07e90] mb-8">
               A Modern Thai bar & Grill concept blending cosmopolitan Italian
               design with the vibrance of Thai hues.
             </p>
@@ -82,7 +82,7 @@ const Footer = () => {
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: 1.2 + index * 0.1 }}
-                  className="text-white-800 hover:text-white transition-colors text-2xl"
+                  className="text-[#e07e90] transition-colors text-2xl"
                   aria-label={link.icon}
                 >
                   {link.icon}
@@ -99,7 +99,7 @@ const Footer = () => {
             transition={{ ...bananaAnimation.transition, delay: 0.4 }}
             className="my-8 w-full md:w-1/4 text-center md:text-left"
           >
-            <h3 className="text-lg font-semibold mb-4 text-white">
+            <h3 className="text-lg font-semibold mb-4">
               Quick Links
             </h3>
             <ul className="space-y-2">
@@ -113,7 +113,7 @@ const Footer = () => {
                 >
                   <a
                     href={link.href}
-                    className="text-white hover:text-white transition-colors"
+                    className=" transition-colors"
                   >
                     {link.text}
                   </a>
@@ -130,7 +130,7 @@ const Footer = () => {
             transition={{ ...bananaAnimation.transition, delay: 0.6 }}
             className="my-8 mb-8 w-full md:w-1/4 text-center md:text-left"
           >
-            <h3 className="text-lg font-semibold mb-4 text-white">
+            <h3 className="text-lg font-semibold mb-4">
               Legal
             </h3>
             <ul className="space-y-2">
@@ -144,7 +144,7 @@ const Footer = () => {
                 >
                   <a
                     href={link.href}
-                    className="text-white hover:text-white transition-colors"
+                    className=" transition-colors"
                   >
                     {link.text}
                   </a>
