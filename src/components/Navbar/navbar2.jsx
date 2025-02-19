@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../assets/logos/8.png";
+import logo from "../../assets/logos/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaCross, FaHamburger } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
@@ -34,17 +34,17 @@ const NavbarTwo = () => {
     <div className="relative">
       {/* Main Navbar */}
       <nav
-        className={`fixed h-28 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`h-28 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
             ? "bg-white shadow-md"
             : location.pathname === "/about"
-            ? "bg-[#e07e90]"
+            ? "bg-white"
             : location.pathname === "/contact"
-            ? "bg-[#e07e90]"
-            : "bg-[#e07e90]"
+            ? "bg-white"
+            : "bg-white"
         }`}
       >
-        <div className="max-w-7xl mx-auto p-8">
+        <div className="max-w-7xl mx-auto p-2">
           <div className="flex items-center justify-between">
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
@@ -57,7 +57,7 @@ const NavbarTwo = () => {
                   className={`text-sm font-medium transition-colors duration-300 ${
                     isScrolled
                       ? "text-[#e07e90] hover:text-[#000000]"
-                      : "text-white font-medium hover:text-[#000000]"
+                      : "text-[#e07e90] font-medium hover:text-[#000000]"
                   }`}
                 >
                   {item.name}
@@ -67,7 +67,7 @@ const NavbarTwo = () => {
             {/* Logo */}
             <div className="flex">
               <a href="/">
-                <img src={logo} alt="Logo" className="w-13 h-7" />
+                <img src={logo} alt="Logo" className="w-28 h-22" />
               </a>
             </div>
             {/* Action Buttons */}
@@ -77,7 +77,7 @@ const NavbarTwo = () => {
                 className={`px-4 py-2 rounded-lg transition-colors duration-300 ${
                   isScrolled
                     ? "px-6 font-medium border-2 rounded-full border-[#e07e90] text-[#000000] hover:bg-[#e07e90] hover:text-white "
-                    : "px-6 border-2 border-[#e07e90] border-[#000000] font-medium hover: text-[#ffffff] rounded-full"
+                    : "px-6 border-2 border-[#e07e90] border-[#000000] font-medium hover: text-[#000000] rounded-full"
                 }`}
               >
                 Call Us

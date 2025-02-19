@@ -68,10 +68,10 @@ const ContactUs = () => {
             transition={{ duration: 0.6 }}
             className="flex flex-col justify-center"
           >
-            <div className='shadow-lg bg-white p-8 rounded-lg'>
-              <h1 className="text-4xl font-bold text-[#e07e90] mb-6">Contact Us</h1>
+            <div className='shadow-lg bg-white p-8 rounded-lg border-2 border-[#e07e90]'>
+              <h1 className="text-4xl font-bold text- mb-6">Contact Us</h1>
               <p className="text-gray-700 mb-6">
-                Seth Sarai, 6/4, Kalka Das Marg, Behind Qutub Minar Mehrauli, New Delhi, Delhi 110030
+              ward no 1, Kharsra No 1501, 1st Floor, Kalka Das Marg, Mehrauli, New Delhi, Delhi 110030
               </p>
               <div className="space-y-4">
                 <p className='text-gray-700'>For franchisee enquiries contact Business Development and Franchising:</p>
@@ -81,7 +81,7 @@ const ContactUs = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="text-[#4A3427]">📞</span>
-                  <span className="text-gray-700">+91 9870587770/71 | 011-20860051/52</span>
+                  <span className="text-gray-700">+91 81309 33899</span>
                 </div>
               </div>
             </div>
@@ -92,7 +92,7 @@ const ContactUs = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-white rounded-lg p-8 shadow-lg"
+            className="bg-white rounded-lg p-8 shadow-lg border-2 border-[#e07e90]"
           >
             <h2 className="text-3xl font-bold text-[#e07e90] mb-6">Get in Touch</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -144,7 +144,7 @@ const ContactUs = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full p-4 rounded-md bg-[#e07e90] text-white font-semibold ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-[#3A2720]'} transition duration-200`}
+                className={`w-full p-4 rounded-md bg-[#e07e90] text-white font-semibold ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-white hover:text-[#e07e90] hover: border-2 hover:border-[#e07e90]'} transition duration-200`}
               >
                 {isSubmitting ? 'Submitting...' : 'Submit'}
               </button>

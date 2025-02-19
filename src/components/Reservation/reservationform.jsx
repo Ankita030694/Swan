@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import FirestoreService from "../../services/firestore-service";
-import reserve from "../../assets/formbg.png";
+import reserve from "../../assets/bg.png";
 import loadingAnimation from "../../assets/loader-old.json";
 import Lottie from "lottie-react";
 import "./reservation.css";
@@ -233,15 +233,15 @@ const ReservationForm = () => {
 
   return (
     <div
-      // style={containerStyle} 
+      style={containerStyle} 
       className="flex items-center justify-center w-full py-8 h-auto"
     >
       <div
-        className="w-full max-w-5xl rounded-lg shadow-lg p-8 mt-24 border-orange-100 border-2"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+        className="w-full max-w-5xl rounded-lg shadow-lg p-8 mt-24 border-[#e07e90] border-2"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
       >
         <div className="mb-8 text-center">
-          <h2 className="text-3xl font-bold text-[#e07e90]">
+          <h2 className="text-3xl font-bold text-white">
             BOOK YOUR TABLE NOW
           </h2>
         </div>
