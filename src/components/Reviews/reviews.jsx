@@ -25,7 +25,7 @@ const Reviews = () => {
   }, []);
 
   return (
-    <section className="bg-brown-300">
+    <section className="bg-white">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           {/* Left Image Section */}

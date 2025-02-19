@@ -7,7 +7,7 @@ import "./header.css";
 
 // Import images
 // import hero from "../../assets/hero.png";
-import header7 from "/banners/BOTAI 16X9.jpg";
+import header7 from "/banners/banner.jpg";
 
 const images = [header7];
 
@@ -76,7 +76,7 @@ const Header = () => {
               transition={{ ...textAnimation.transition, delay: 0 }}
               className="text-5xl md:text-6xl lg:text-8xl font-bold text-brown-200 mb-6 md:mb-8 font-heading tracking-tighter relative"
             >
-              <div className="glassy-box">MODERN THAI BAR & GRILL</div>
+              <div className="glassy-box">SWAN</div>
             </motion.h1>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logos/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaCross, FaHamburger } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
@@ -36,12 +36,12 @@ const NavbarTwo = () => {
       <nav
         className={`fixed h-28 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-brown shadow-md"
+            ? "bg-transparent shadow-md"
             : location.pathname === "/about"
-            ? "bg-brown"
+            ? "bg-transparent"
             : location.pathname === "/contact"
-            ? "bg-brown"
-            : "bg-[rgba(50,28,18,0.5)]"
+            ? "bg-transparent"
+            : "bg-white"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4">
@@ -56,8 +56,8 @@ const NavbarTwo = () => {
                   rel={item.newTab ? "noopener noreferrer" : ""}
                   className={`text-sm font-medium transition-colors duration-300 ${
                     isScrolled
-                      ? "text-brown-100 hover:text-gray-600"
-                      : "text-brown-100 font-medium hover:text-orange-100"
+                      ? "text-white hover:text-[#e07e90]"
+                      : "text-[#e07e90] font-medium hover:text-[#000000]"
                   }`}
                 >
                   {item.name}
@@ -76,28 +76,28 @@ const NavbarTwo = () => {
                 href="tel:+919870587770"
                 className={`px-4 py-2 rounded-lg transition-colors duration-300 ${
                   isScrolled
-                    ? "px-6 font-medium border-2 rounded-full border-orange-100 text-orange-100 hover:bg-orange-100 hover:text-brown "
-                    : "px-6 border-2 border-orange-100 font-medium hover:bg-brown text-orange-100 rounded-full"
+                    ? "px-6 font-medium border-2 rounded-full border-[#e07e90] text-[#000000] hover:bg-transparent "
+                    : "px-6 border-2 border-[#e07e90] font-medium hover: text-[#000000] rounded-full"
                 }`}
               >
                 Call Us
               </a>
               <Link
                 to={"/reservation"}
-                className="px-4 py-2 bg-orange-100 font-medium rounded-lg"
+                className="px-4 py-2 bg-white font-medium rounded-lg text-[#e07e90]"
                 style={{
                   transition: "background-color 0.3s ease, border 0.3s ease",
-                  border: "2px solid transparent", // Default border is transparent
+                  border: "2px solid black", // Default border is transparent
                 }}
                 onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = "transparent";
+                  e.target.style.backgroundColor = "#ffffff";
                   e.target.style.borderColor = "#331c13"; // Add black border
-                  e.target.style.color = "#d1a37d";
+                  e.target.style.color = "#e07e90";
                 }}
                 onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = "#cfa27a"; // Reset background
-                  e.target.style.borderColor = "transparent"; // Reset border
-                  e.target.style.color = "#331c13";
+                  e.target.style.backgroundColor = "#ffffff"; // Reset background
+                  e.target.style.borderColor = "black"; // Reset border
+                  e.target.style.color = "#e07e90";
                 }}
               >
                 Reservation

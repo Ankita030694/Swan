@@ -47,7 +47,7 @@ const TableReservation = () => {
   };
 
   return (
-    <div className="relative w-full bg-brown-200">
+    <div className="relative w-full bg-white">
       {/* First Section */}
       <motion.section
         className="relative flex items-center justify-center"
@@ -66,7 +66,7 @@ const TableReservation = () => {
 
         <div className="relative h-[30vh] md:h-[50vh] z-10 ">
           <motion.h1
-            className="text-2xl md:text-3xl lg:text-5xl mt-4 font-bold tracking-tight text-orange-100"
+            className="text-2xl md:text-3xl lg:text-5xl mt-4 font-bold tracking-tight text-[#e07e90]"
             variants={fadeInUpVariants}
           >
             WANT TO BOOK A TABLE?
@@ -80,7 +80,7 @@ const TableReservation = () => {
             }}
           >
             <motion.button
-              className="px-10 py-2 bg-orange-100 text-white text-lg sx:text-xl font-semibold rounded-full 
+              className="px-10 py-2 bg-[#e07e90] text-lg sx:text-xl font-semibold rounded-full border-[#e07e90]
                        focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-100"
               variants={buttonVariants}
               whileHover="hover"

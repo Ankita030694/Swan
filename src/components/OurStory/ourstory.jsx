@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import story from '../../assets/story2.png'
-import location from "../../assets/about/location3.png"
+import location from "../../assets/about/ourstory.jpg"
 const OurStory = () => {
   const titleVariants = {
     hidden: { 
@@ -49,7 +49,7 @@ const OurStory = () => {
   };
 
   return (
-    <div className="w-full py-16 px-8 bg-brown-200">
+    <div className="w-full py-16 px-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Left side - Title */}
         <motion.div 
@@ -65,7 +65,7 @@ const OurStory = () => {
 
         {/* Right side - Content */}
         <div className="md:w-2/3 flex flex-col gap-8">
-        <h2 className="text-[#F85C2C] text-6xl font-bold">
+        <h2 className="text-[#e07e90] text-6xl font-bold">
             OUR STORY
           </h2>
           {/* Description */}
@@ -83,38 +83,38 @@ const OurStory = () => {
           <div className="flex flex-wrap gap-6">
             {/* Outlets stat */}
             <motion.div 
-              className="flex-1 min-w-[200px] rounded-2xl p-6 bg-orange-200 border-orange-100 border-2"
+              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={statCardVariants}
             >
               {/* <div className="text-4xl font-bold mb-2">Handmade Syrups</div> */}
-              <div className="text-xl text-center">Handmade Syrups</div>
+              <div className="text-xl text-center text-[#e07e90]">Handmade Syrups</div>
             </motion.div>
 
             {/* Awards stat */}
             <motion.div 
-              className="flex-1 min-w-[200px] rounded-2xl p-6 bg-orange-200 border-orange-100 border-2"
+              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={statCardVariants}
             >
               {/* <div className="text-4xl font-bold mb-2">Live Sushi Bar</div> */}
-              <div className="text-xl text-center" >Live Sushi Bar</div>
+              <div className="text-xl text-center text-[#e07e90]" >Live Sushi Bar</div>
             </motion.div>
 
             {/* Additional Awards stat */}
             <motion.div 
-              className="flex-1 min-w-[200px] rounded-2xl p-6 bg-orange-200 border-orange-100 border-2"
+              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={statCardVariants}
             >
               {/* <div className="text-4xl font-bold mb-2">Infinity View</div> */}
-              <div className="text-xl text-center">Infinity View</div>
+              <div className="text-xl text-center text-[#e07e90]">Infinity View</div>
             </motion.div>
           </div>
         </div>
