@@ -69,7 +69,7 @@ const BoTaiGallery = () => {
     <motion.div
       className="w-full min-h-[500px] p-6 flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url(${gallerybg})`,
+        // backgroundImage: `url(${gallerybg})`,
       }}
       initial="hidden"
       whileInView="visible"

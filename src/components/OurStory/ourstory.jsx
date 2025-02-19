@@ -83,38 +83,38 @@ const OurStory = () => {
           <div className="flex flex-wrap gap-6">
             {/* Outlets stat */}
             <motion.div 
-              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2"
+              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2 border-[#e07e90]"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={statCardVariants}
             >
               {/* <div className="text-4xl font-bold mb-2">Handmade Syrups</div> */}
-              <div className="text-xl text-center text-[#e07e90]">Handmade Syrups</div>
+              <div className="text-xl text-center text-[#e07e90] border-[#e07e90]">Handmade Syrups</div>
             </motion.div>
 
             {/* Awards stat */}
             <motion.div 
-              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2"
+              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2 border-[#e07e90]"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={statCardVariants}
             >
               {/* <div className="text-4xl font-bold mb-2">Live Sushi Bar</div> */}
-              <div className="text-xl text-center text-[#e07e90]" >Live Sushi Bar</div>
+              <div className="text-xl text-center text-[#e07e90] border-[#e07e90]" >Live Sushi Bar</div>
             </motion.div>
 
             {/* Additional Awards stat */}
             <motion.div 
-              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2"
+              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2 border-[#e07e90]"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={statCardVariants}
             >
               {/* <div className="text-4xl font-bold mb-2">Infinity View</div> */}
-              <div className="text-xl text-center text-[#e07e90]">Infinity View</div>
+              <div className="text-xl text-center text-[#e07e90] border-[#e07e90]">Infinity View</div>
             </motion.div>
           </div>
         </div>
