@@ -42,7 +42,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-white text-[#e07e90] pb-12">
+    <footer className="bg-white text-[#e07e90] pb-12 border-4">
       <div className="container mx-auto px-5">
         <div className="flex flex-wrap justify-around">
           {/* Logo and Description */}
