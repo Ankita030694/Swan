@@ -18,7 +18,7 @@ const LoadingScreen = () => {
       exit={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="w-32 h-32">
+      <div className="w-64 h-64">
         <Lottie animationData={loadingAnimation} loop={true} autoplay={true} />
       </div>
     </motion.div>
@@ -33,7 +33,7 @@ const Home = () => {
     // Simulate loading time or replace with actual data loading
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 seconds loading time
+    }, 200000); // 2 seconds loading time
 
     return () => clearTimeout(timer);
   }, []);
