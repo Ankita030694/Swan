@@ -52,7 +52,7 @@ const OurStory = () => {
     <div className="w-full py-16 px-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Left side - Title */}
-        <motion.div 
+        {/* <motion.div 
           className="md:w-1/3 ourstimage"
           initial="hidden"
           whileInView="visible"
@@ -61,10 +61,10 @@ const OurStory = () => {
           style={{ backgroundImage: `url(${location})` }}
         >
           
-        </motion.div>
+        </motion.div> */}
 
         {/* Right side - Content */}
-        <div className="md:w-2/3 flex flex-col gap-8">
+        <div className="md:w-3/3 flex flex-col gap-8 text-center">
         <h2 className="text-[#e07e90] text-6xl font-bold">
             OUR STORY
           </h2>
