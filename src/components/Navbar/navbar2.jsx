@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../assets/logos/logo.png";
+import logo from "../../assets/logos/8.png";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaCross, FaHamburger } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
@@ -36,15 +36,15 @@ const NavbarTwo = () => {
       <nav
         className={`fixed h-28 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-transparent shadow-md"
+            ? "bg-white shadow-md"
             : location.pathname === "/about"
-            ? "bg-transparent"
+            ? "bg-[#e07e90]"
             : location.pathname === "/contact"
-            ? "bg-transparent"
-            : "bg-white"
+            ? "bg-[#e07e90]"
+            : "bg-[#e07e90]"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto p-8">
           <div className="flex items-center justify-between">
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
@@ -56,8 +56,8 @@ const NavbarTwo = () => {
                   rel={item.newTab ? "noopener noreferrer" : ""}
                   className={`text-sm font-medium transition-colors duration-300 ${
                     isScrolled
-                      ? "text-white hover:text-[#e07e90]"
-                      : "text-[#e07e90] font-medium hover:text-[#000000]"
+                      ? "text-[#e07e90] hover:text-[#000000]"
+                      : "text-white font-medium hover:text-[#000000]"
                   }`}
                 >
                   {item.name}
@@ -67,7 +67,7 @@ const NavbarTwo = () => {
             {/* Logo */}
             <div className="flex">
               <a href="/">
-                <img src={logo} alt="Logo" className="w-28 h-28" />
+                <img src={logo} alt="Logo" className="w-13 h-7" />
               </a>
             </div>
             {/* Action Buttons */}
@@ -76,8 +76,8 @@ const NavbarTwo = () => {
                 href="tel:+919870587770"
                 className={`px-4 py-2 rounded-lg transition-colors duration-300 ${
                   isScrolled
-                    ? "px-6 font-medium border-2 rounded-full border-[#e07e90] text-[#000000] hover:bg-transparent "
-                    : "px-6 border-2 border-[#e07e90] font-medium hover: text-[#000000] rounded-full"
+                    ? "px-6 font-medium border-2 rounded-full border-[#e07e90] text-[#000000] hover:bg-[#e07e90] hover:text-white "
+                    : "px-6 border-2 border-[#e07e90] border-[#000000] font-medium hover: text-[#ffffff] rounded-full"
                 }`}
               >
                 Call Us

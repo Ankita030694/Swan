@@ -233,7 +233,7 @@ const ReservationForm = () => {
 
   return (
     <div
-      style={containerStyle}
+      // style={containerStyle} 
       className="flex items-center justify-center w-full py-8 h-auto"
     >
       <div
@@ -241,7 +241,7 @@ const ReservationForm = () => {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
       >
         <div className="mb-8 text-center">
-          <h2 className="text-3xl font-bold text-orange-100">
+          <h2 className="text-3xl font-bold text-[#e07e90]">
             BOOK YOUR TABLE NOW
           </h2>
         </div>
@@ -523,8 +523,8 @@ const ReservationForm = () => {
                 onClick={() => filterTimeSlots("lunch")}
                 className={`p-2 rounded-md transition-colors duration-200 md:w-48 ${
                   formData.timing === "lunch"
-                    ? "bg-brown font-semibold text-white"
-                    : "bg-brown-100 hover:bg-gray-200"
+                    ? "bg-[#e07e90] font-semibold text-white"
+                    : "bg-white hover:bg-gray-200"
                 }`}
               >
                 Lunch Time
@@ -537,8 +537,8 @@ const ReservationForm = () => {
                 onClick={() => filterTimeSlots("dinner")}
                 className={`p-2 rounded-md transition-colors duration-200 md:w-48 ${
                   formData.timing === "dinner"
-                    ? "bg-brown font-semibold text-white"
-                    : "bg-brown-100 hover:bg-gray-200"
+                    ? "bg-[#e07e90] font-semibold text-white"
+                    : "bg-white hover:bg-gray-200"
                 }`}
               >
                 Dinner Time
@@ -556,8 +556,8 @@ const ReservationForm = () => {
                   onClick={() => handleInputChange("timeSlot", slot)}
                   className={`p-2 rounded-md transition-colors duration-200 ${
                     formData.timeSlot === slot
-                      ? "bg-brown font-semibold text-white"
-                      : "bg-brown-100 hover:bg-gray-200"
+                      ? "bg-[#e07e90] font-semibold text-white"
+                      : "bg-white hover:bg-gray-200"
                   }`}
                 >
                   {slot}
@@ -573,7 +573,7 @@ const ReservationForm = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-orange-100 hover:bg-brown-400 font-semibold hover:text-orange-100 py-3 rounded-lg transition-colors duration-200 disabled:bg-orange-300"
+            className="w-full bg-[#e07e90] text-white hover:bg-white font-semibold hover:text-[#e07e90] py-3 rounded-lg transition-colors duration-200 disabled:bg-orange-300"
           >
             {loading ? "Please Wait .." : "Submit"}
           </button>

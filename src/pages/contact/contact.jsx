@@ -59,7 +59,7 @@ const ContactUs = () => {
   return (
     <>
       <NavbarTwo/>
-      <div className="min-h-screen bg-[#f9f6f1] py-16 px-6 sm:px-8 lg:px-12 ">
+      <div className="min-h-screen bg-white py-16 px-6 sm:px-8 lg:px-12 ">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 mt-20">
           {/* Left Section */}
           <motion.div
@@ -69,14 +69,14 @@ const ContactUs = () => {
             className="flex flex-col justify-center"
           >
             <div className='shadow-lg bg-white p-8 rounded-lg'>
-              <h1 className="text-4xl font-bold text-[#4A3427] mb-6">Contact Us</h1>
+              <h1 className="text-4xl font-bold text-[#e07e90] mb-6">Contact Us</h1>
               <p className="text-gray-700 mb-6">
                 Seth Sarai, 6/4, Kalka Das Marg, Behind Qutub Minar Mehrauli, New Delhi, Delhi 110030
               </p>
               <div className="space-y-4">
                 <p className='text-gray-700'>For franchisee enquiries contact Business Development and Franchising:</p>
                 <div className="flex items-center space-x-3">
-                  <span className="text-[#4A3427]">📧</span>
+                  <span className="text-[#e07e90]">📧</span>
                   <span className="text-gray-700">franchising@massiverestaurants.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -94,7 +94,7 @@ const ContactUs = () => {
             transition={{ duration: 0.6 }}
             className="bg-white rounded-lg p-8 shadow-lg"
           >
-            <h2 className="text-3xl font-bold text-[#4A3427] mb-6">Get in Touch</h2>
+            <h2 className="text-3xl font-bold text-[#e07e90] mb-6">Get in Touch</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-1">
                 <input
@@ -144,7 +144,7 @@ const ContactUs = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full p-4 rounded-md bg-[#4A3427] text-white font-semibold ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-[#3A2720]'} transition duration-200`}
+                className={`w-full p-4 rounded-md bg-[#e07e90] text-white font-semibold ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-[#3A2720]'} transition duration-200`}
               >
                 {isSubmitting ? 'Submitting...' : 'Submit'}
               </button>
