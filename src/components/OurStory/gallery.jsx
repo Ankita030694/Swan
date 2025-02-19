@@ -4,7 +4,7 @@ import gallery1 from '../../assets/gallery1.png';
 import gallery2 from '../../assets/gallery2.png';
 import gallery3 from '../../assets/gallery3.png';
 import gallerybg from '../../assets/bg-story.png';
-
+import insta from "../../assets/insta.png"
 const BoTaiGallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -76,7 +76,8 @@ const BoTaiGallery = () => {
       variants={containerVariants}
       viewport={{ once: true }}
     >
-      <div class="elfsight-app-0e0d74dc-158d-488b-858d-37fa326a8c43" data-elfsight-app-lazy></div>
+      {/* <div class="elfsight-app-0e0d74dc-158d-488b-858d-37fa326a8c43" data-elfsight-app-lazy></div> */}
+      <img src={insta} alt="" />
     </motion.div>
   );
 };
