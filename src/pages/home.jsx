@@ -13,7 +13,7 @@ import NavbarTwo from "../components/Navbar/navbar2";
 const LoadingScreen = () => {
   return (
     <motion.div 
-      className="fixed inset-0 flex items-center justify-center z-50 bg-loading-screen bg-cover bg-center"
+      className="fixed inset-0 flex items-center justify-center z-40 bg-loading-screen bg-cover bg-center"
       initial={{ opacity: 1 }}
       exit={{ opacity: 1 }}
       transition={{ duration: 0.3 }}

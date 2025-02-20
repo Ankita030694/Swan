@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../assets/logos/logo.png";
+import logo from "../../assets/logos/8.png";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaCross, FaHamburger } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
@@ -34,18 +34,9 @@ const NavbarTwo = () => {
     <div className="relative">
       {/* Main Navbar */}
       <nav
-        className={`h-21 left-0 right-0 z-50 transition-all duration-300 border-2 border-[#e07e90] ${
-          isScrolled
-            ? "bg-white shadow-md"
-            : location.pathname === "/about"
-            ? "bg-white"
-            : location.pathname === "/contact"
-            ? "bg-white"
-            : "bg-white"
-        }`}
-        
+        className={`h-21 left-0 right-0 z-50 absolute transition-all duration-300  bg-transparent `}
       >
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto p-8">
           <div className="flex items-center justify-between">
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
@@ -55,10 +46,10 @@ const NavbarTwo = () => {
                   href={item.path}
                   target={item.newTab ? "_blank" : ""}
                   rel={item.newTab ? "noopener noreferrer" : ""}
-                  className={`text-md font-medium transition-colors duration-300 ${
+                  className={`text-md font-medium transition-colors duration-300 border-2 py-2 px-4 rounded-lg ${
                     isScrolled
-                      ? "text-[#e07e90] hover:text-[#000000]"
-                      : "text-[#e07e90] font-medium hover:text-[#000000]"
+                      ? "text-white hover:text-[#000000]"
+                      : "text-white font-medium hover:text-[#000000]"
                   }`}
                 >
                   {item.name}
@@ -78,7 +69,7 @@ const NavbarTwo = () => {
                 className={`px-4 py-2 rounded-lg transition-colors duration-300 ${
                   isScrolled
                     ? "px-6 font-medium border-2 rounded-full border-[#e07e90] text-[#e07e90] hover:bg-[#e07e90] hover:text-white "
-                    : "px-6 border-2 border-[#e07e90] border-[#000000] text-[#e07e90] font-medium hover:bg-[#e07e90] hover:text-white rounded-full"
+                    : "px-6 border-2 border-white border-[#000000] text-white font-medium hover:bg-[#e07e90] hover:text-white rounded-full"
                 }`}
               >
                 Call Us
