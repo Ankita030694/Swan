@@ -126,16 +126,16 @@ function ReservationDetails() {
   return (
     <>
       <AdminNavbar />
-      <main className="w-screen h-auto bg-brown p-4 pt-52">
+      <main className="w-screen h-auto bg-white p-4 pt-52">
         <div className="container mx-auto">
-          <h1 className="text-2xl font-bold text-gray-800 mb-4 text-brown-100">
+          <h1 className="text-2xl font-bold text-gray-800 mb-4 text-[#e07e90]">
             Reservation Details
           </h1>
 
           {/* Filters and Search */}
           <div className="flex flex-row-reverse flex-wrap items-center justify-between mb-6 gap-4">
             <div>
-              <button className="bg-white rounded-md p-2" onClick={downloadCSV}>
+              <button className="bg-[#e07e90] rounded-md p-2" onClick={downloadCSV}>
                 Download CSV
               </button>
             </div>
@@ -156,7 +156,7 @@ function ReservationDetails() {
             <div>
               <input
                 type="date"
-                className="bg-white rounded-md p-2"
+                className="bg-[#e07e90] rounded-md p-2"
                 value={selectedDate}
                 onChange={(e) => setSelectedDate(e.target.value)}
               />
@@ -174,9 +174,9 @@ function ReservationDetails() {
           </div>
 
           {/* Reservation Table */}
-          <div className="bg-[#CFA177] shadow-md rounded-lg overflow-hidden">
+          <div className="bg-[#e07e90] shadow-md rounded-lg overflow-hidden">
             <table className="min-w-full bg-[#CFA177]">
-              <thead className="bg-gray-300 text-gray-600 uppercase text-sm leading-normal">
+              <thead className="bg-[#e07e90] text-gray-600 uppercase text-sm leading-normal">
                 <tr>
                   <th
                     className="py-3 px-6 text-center cursor-pointer"
@@ -215,7 +215,7 @@ function ReservationDetails() {
                   filteredReservations.map((res) => (
                     <tr
                       key={res.id}
-                      className="border-b border-gray-200 hover:bg-gray-100"
+                      className="border-b bg-white border-gray-200 hover:bg-[#e07e90]"
                     >
                       <td className="py-3 px-3 text-center">{res.name}</td>
                       <td className="py-3 px-3 text-center">{res.email}</td>
@@ -241,8 +241,8 @@ function ReservationDetails() {
                 ) : (
                   <tr>
                     <td
-                      colSpan="7"
-                      className="py-3 px-6 text-center text-gray-500"
+                      colSpan="10"
+                      className="py-3 px-6 text-center text-gray-500 bg-white"
                     >
                       No reservations found.
                     </td>
@@ -252,8 +252,8 @@ function ReservationDetails() {
               <tfoot>
                 <tr>
                   <td
-                    colSpan="7"
-                    className="py-3 px-6 text-right text-gray-500"
+                    colSpan="10"
+                    className="py-3 px-6 text-right text-gray-500 bg-[#e07e90]"
                   >
                     Total queries: {filteredReservations.length}
                   </td>

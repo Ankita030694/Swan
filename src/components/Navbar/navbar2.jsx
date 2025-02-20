@@ -48,8 +48,8 @@ const NavbarTwo = () => {
                   rel={item.newTab ? "noopener noreferrer" : ""}
                   className={`text-md font-medium transition-colors duration-300 border-2 py-2 px-4 rounded-lg ${
                     isScrolled
-                      ? "text-white hover:text-[#000000]"
-                      : "text-white font-medium hover:text-[#000000]"
+                      ? "text-dark hover:text-[#000000]"
+                      : "text-dark font-medium hover:text-[#000000]"
                   }`}
                 >
                   {item.name}
@@ -69,7 +69,7 @@ const NavbarTwo = () => {
                 className={`px-4 py-2 rounded-lg transition-colors duration-300 ${
                   isScrolled
                     ? "px-6 font-medium border-2 rounded-full border-[#e07e90] text-[#e07e90] hover:bg-[#e07e90] hover:text-white "
-                    : "px-6 border-2 border-white border-[#000000] text-white font-medium hover:bg-[#e07e90] hover:text-white rounded-full"
+                    : "px-6 border-2 border-[#e07e90] border-[#000000] text-[#e07e90] font-medium hover:bg-[#e07e90] hover:text-white rounded-full"
                 }`}
               >
                 Call Us

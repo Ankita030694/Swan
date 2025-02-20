@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logos/8.png'
 import { Link, useNavigate } from 'react-router-dom';
 const AdminNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,14 +33,14 @@ const AdminNavbar = () => {
     <div className="relative">
       {/* Main AdminNavbar */}
       <nav className={`fixed h-28 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-brown shadow-md' : 'bg-transparent'
+        isScrolled ? 'bg-brown shadow-md' : 'bg-[#e07e90]'
       }`}>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between">
           
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-8 p-8">
               {navItems.map((item) => (
                 <a
                   key={item.name}
@@ -58,7 +58,7 @@ const AdminNavbar = () => {
               <img
                 src={logo}
                 alt="Logo"
-                className="w-28 h-28"
+                className="w-28 h-22"
               />
             </div>
             {/* Action Buttons */}
