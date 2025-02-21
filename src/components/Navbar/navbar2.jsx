@@ -76,20 +76,26 @@ const NavbarTwo = () => {
               </a>
               <Link
                 to={"/reservation"}
-                className="px-4 py-2 bg-[#e07e90] font-medium rounded-lg text-black "
-                style={{
-                  transition: "background-color 0.3s ease, border 0.3s ease",
-                }}
-                onMouseEnter={(e) => {
-                  e.target.style.backgroundColor = "#ffffff";
-                  e.target.style.borderColor = "#ffffff"; // Add black border
-                  e.target.style.color = "#000000";
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.backgroundColor = "#e07e90"; // Reset background
-                  e.target.style.borderColor = "#ffffff"; // Reset border
-                  e.target.style.color = "#000000";
-                }}
+                className={`px-4 py-2 bg-white font-medium rounded-lg text-black hover:bg-[#000000] ${
+                  isScrolled
+                    ? "px-6 border-2 border-[#e07e90] border-[#000000] text-black font-medium hover:bg-dark hover:text-[#e07e90] rounded-full"
+                    : "px-6 font-medium border-2 rounded-full border-[#e07e90] text-black hover:bg-dark hover:text-[#e07e90] "
+                }
+                }`}
+                // style={{
+                //   transition: "background-color 0.3s ease, border 0.3s ease",
+                //   border: "2px solid", // Default border is transparent
+                // }}
+                // onMouseEnter={(e) => {
+                //   e.target.style.backgroundColor = "#ffffff";
+                //   e.target.style.borderColor = "#ffffff"; // Add black border
+                //   e.target.style.color = "#000000";
+                // }}
+                // onMouseLeave={(e) => {
+                //   e.target.style.backgroundColor = "#ffffff"; // Reset background
+                //   e.target.style.borderColor = "#ffffff"; // Reset border
+                //   e.target.style.color = "#000000";
+                // }}
               >
                 Reservation
               </Link>
