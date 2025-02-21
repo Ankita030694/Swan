@@ -1,37 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
-import bowl from "../../assets/bowl.png";
 import { Link } from "react-router-dom";
 import newspaper from "../../assets/newspaper.mp4";
 
 const TableReservation = () => {
   const fadeInUpVariants = {
-    hidden: {
-      opacity: 0,
-      y: 50,
-    },
+    hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
-    },
-  };
-
-  const scaleInVariants = {
-    hidden: {
-      opacity: 0,
-      scale: 0.8,
-    },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
+      transition: { duration: 0.8, ease: "easeOut" },
     },
   };
 
@@ -39,63 +17,49 @@ const TableReservation = () => {
     initial: { scale: 1 },
     hover: {
       scale: 1.05,
-      transition: {
-        duration: 0.2,
-        ease: "easeInOut",
-      },
+      transition: { duration: 0.2, ease: "easeInOut" },
     },
     tap: { scale: 0.95 },
   };
 
   return (
     <div className="row">
-      <div className="relative col-md-6 bg-white">
-        {/* First Section */}
+      {/* Left Section */}
+      <div className="relative col-md-6 bg-white flex items-center justify-center">
         <motion.section
-          className="relative flex items-center justify-center h-full"
+          className="relative flex items-center justify-center h-full w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          <div className="absolute bottom-0">
-            {/* <motion.img
-              src={bowl}
-              alt="Elegant dining"
-              className="w-full"
-              variants={scaleInVariants}
-            /> */}
-          </div>
-
-          <div className="relative h-[30vh] md:h-[50vh] z-10 ">
-            <motion.h1
-              className="text-2xl md:text-3xl lg:text-5xl mt-4 font-bold tracking-tight text-[#e07e90]"
+          {/* Glassy Effect Box */}
+          <div
+            variants={fadeInUpVariants}
+            className="glassy-box1 p-8 md:p-12 rounded-lg text-center"
+          >
+            <h1
+              className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-[#e07e90]"
               variants={fadeInUpVariants}
             >
               WANT TO BOOK A TABLE?
-            </motion.h1>
+            </h1>
 
-            <motion.div
-              variants={fadeInUpVariants}
-              className="absolute  bottom-16  md:bottom-32  flex justify-center"
-              style={{
-                width: "100%",
-              }}
-            >
+            <motion.div variants={fadeInUpVariants} className="mt-6">
               <motion.button
-                className="px-10 py-2 bg-[#e07e90] text-lg sx:text-xl font-semibold rounded-full border-[#e07e90]
-                       focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-100"
+                className="px-8 py-3 bg-[#e07e90] text-lg font-semibold text-white rounded-full border-[#e07e90]
+                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-300"
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
               >
-                <Link to="/reservation" className="text-white">
-                  Book a table Now
-                </Link>
+                <Link to="/reservation">Book a Table Now</Link>
               </motion.button>
             </motion.div>
           </div>
         </motion.section>
       </div>
+
+      {/* Right Section - Video */}
       <div className="col-md-6">
         <video
           src={newspaper}

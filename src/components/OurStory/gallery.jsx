@@ -77,7 +77,7 @@ const BoTaiGallery = () => {
       viewport={{ once: true }}
     >
       {/* <div class="elfsight-app-0e0d74dc-158d-488b-858d-37fa326a8c43" data-elfsight-app-lazy></div> */}
-      <img src={insta} alt="" />
+      <img src={insta} alt=""style={{maxWidth: "75%"}}/>
     </motion.div>
   );
 };
