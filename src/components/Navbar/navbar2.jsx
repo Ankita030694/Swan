@@ -66,11 +66,7 @@ const NavbarTwo = () => {
             <div className="hidden md:flex items-center space-x-4">
               <a
                 href="tel:+919870587770"
-                className={`px-4 py-2 rounded-lg transition-colors duration-300 ${
-                  isScrolled
-                    ? "px-6 font-medium border-2 rounded-full border-[#e07e90] text-black hover:bg-[#e07e90] hover:text-white "
-                    : "px-6 border-2 border-[#e07e90] border-[#000000] text-black font-medium hover:bg-[#e07e90] hover:text-white rounded-full"
-                }`}
+                className="px-4 py-2 rounded-lg transition-colors duration-300 border-2 border-[#000000] text-[#e07e90] hover:border-[#e07e90] hover:text-[#000000]"
               >
                 Call Us
               </a>
