@@ -66,18 +66,13 @@ const NavbarTwo = () => {
             <div className="hidden md:flex items-center space-x-4">
               <a
                 href="tel:+919870587770"
-                className="px-4 py-2 rounded-lg transition-colors duration-300 border-2 border-[#000000] text-[#e07e90] hover:border-[#e07e90] hover:text-[#000000]"
+                className="px-4 py-2 rounded-lg transition-colors duration-300 border-2 border-[#000000] text-[#000000] hover:bg-[#000000] hover:text-[#ffffff]"
               >
                 Call Us
               </a>
               <Link
                 to={"/reservation"}
-                className={`px-4 py-2 bg-white font-medium rounded-lg text-black hover:bg-[#000000] ${
-                  isScrolled
-                    ? "px-6 border-2 border-[#e07e90] border-[#000000] text-black font-medium hover:bg-dark hover:text-[#e07e90] rounded-full"
-                    : "px-6 font-medium border-2 rounded-full border-[#e07e90] text-black hover:bg-dark hover:text-[#e07e90] "
-                }
-                }`}
+                className="px-4 py-2 bg-white font-medium rounded-lg text-white bg-[#000000] hover:bg-white hover:text-[#000000] hover:border-2 hover:border-[#000000]"
                 // style={{
                 //   transition: "background-color 0.3s ease, border 0.3s ease",
                 //   border: "2px solid", // Default border is transparent
