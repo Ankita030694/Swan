@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import ReservationBanner from "../components/Reservation/tablereservation";
 import BoTaiGallery from "../components/OurStory/gallery";
 import Lottie from "lottie-react";
-import loadingAnimation from "../assets/swanloader.json";
+import loadingAnimation from "../assets/swanloader1.json";
 import NavbarTwo from "../components/Navbar/navbar2";
 const LoadingScreen = () => {
   return (
