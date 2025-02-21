@@ -72,7 +72,7 @@ const NavbarTwo = () => {
               </a>
               <Link
                 to={"/reservation"}
-                className="px-4 py-2 bg-dark font-medium rounded-lg text-white bg-[#000000] hover:bg-white hover:text-[#000000] hover:border-2 hover:border-[#000000]"
+                className="px-4 py-2 bg-dark border-2 font-medium rounded-lg text-white bg-[#000000] hover:bg-white hover:text-[#000000] hover:border-2 hover:border-[#000000]"
                 // style={{
                 //   transition: "background-color 0.3s ease, border 0.3s ease",
                 //   border: "2px solid", // Default border is transparent
