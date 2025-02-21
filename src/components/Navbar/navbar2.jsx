@@ -34,7 +34,7 @@ const NavbarTwo = () => {
     <div className="relative">
       {/* Main Navbar */}
       <nav
-        className={`h-21 left-0 right-0 z-50 absolute transition-all duration-300  bg-transparent `}
+        className={`fixed h-21 left-0 right-0 z-50 transition-all duration-300 bg-white` }
       >
         <div className="max-w-7xl mx-auto p-8">
           <div className="flex items-center justify-between">
@@ -46,7 +46,7 @@ const NavbarTwo = () => {
                   href={item.path}
                   target={item.newTab ? "_blank" : ""}
                   rel={item.newTab ? "noopener noreferrer" : ""}
-                  className={`text-md font-medium transition-colors duration-300 border-2 py-2 px-4 rounded-lg ${
+                  className={`text-md font-medium transition-colors duration-300 py-2 px-4 rounded-lg ${
                     isScrolled
                       ? "text-dark hover:text-[#000000]"
                       : "text-dark font-medium hover:text-[#000000]"
@@ -68,28 +68,27 @@ const NavbarTwo = () => {
                 href="tel:+919870587770"
                 className={`px-4 py-2 rounded-lg transition-colors duration-300 ${
                   isScrolled
-                    ? "px-6 font-medium border-2 rounded-full border-[#e07e90] text-[#e07e90] hover:bg-[#e07e90] hover:text-white "
-                    : "px-6 border-2 border-[#e07e90] border-[#000000] text-[#e07e90] font-medium hover:bg-[#e07e90] hover:text-white rounded-full"
+                    ? "px-6 font-medium border-2 rounded-full border-[#e07e90] text-black hover:bg-[#e07e90] hover:text-white "
+                    : "px-6 border-2 border-[#e07e90] border-[#000000] text-black font-medium hover:bg-[#e07e90] hover:text-white rounded-full"
                 }`}
               >
                 Call Us
               </a>
               <Link
                 to={"/reservation"}
-                className="px-4 py-2 bg-[#e07e90] font-medium rounded-lg text-white border-white"
+                className="px-4 py-2 bg-[#e07e90] font-medium rounded-lg text-black "
                 style={{
                   transition: "background-color 0.3s ease, border 0.3s ease",
-                  border: "2px solid", // Default border is transparent
                 }}
                 onMouseEnter={(e) => {
                   e.target.style.backgroundColor = "#ffffff";
                   e.target.style.borderColor = "#ffffff"; // Add black border
-                  e.target.style.color = "#e07e90";
+                  e.target.style.color = "#000000";
                 }}
                 onMouseLeave={(e) => {
                   e.target.style.backgroundColor = "#e07e90"; // Reset background
                   e.target.style.borderColor = "#ffffff"; // Reset border
-                  e.target.style.color = "#ffffff";
+                  e.target.style.color = "#000000";
                 }}
               >
                 Reservation
