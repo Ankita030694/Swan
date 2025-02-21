@@ -1,65 +1,84 @@
-import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
-import review from '../../assets/Reviews.png';
-import review2 from "../../assets/Swan2340.jpg";
-import google_reviews from "../../assets/google_review.jpeg";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { db } from "../../configs/firebase";
+import { collection, getDocs } from "firebase/firestore";
+import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
-const bananaAnimation = {
-  initial: { x: -100, opacity: 0, rotateY: -30 },
-  animate: { x: 0, opacity: 1, rotateY: 0 },
-  transition: { type: "spring", stiffness: 70, damping: 20 }
+const cardAnimation = {
+  initial: { opacity: 0, y: 30 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.5 },
+};
+
+// Function to render stars based on rating
+const renderStars = (rating) => {
+  const stars = [];
+  const roundedRating = parseFloat(rating); // Convert rating to number
+
+  for (let i = 1; i <= 5; i++) {
+    if (i <= roundedRating) {
+      stars.push(<FaStar key={i} className="text-yellow-400" />);
+    } else if (i - 0.5 === roundedRating) {
+      stars.push(<FaStarHalfAlt key={i} className="text-yellow-400" />);
+    } else {
+      stars.push(<FaRegStar key={i} className="text-gray-300" />);
+    }
+  }
+  return stars;
 };
 
 const Reviews = () => {
-  useEffect(() => {
-    // Create script element for Elfsight
-    const script = document.createElement('script');
-    script.src = 'https://apps.elfsight.com/p/platform.js';
-    script.defer = true;
-    document.body.appendChild(script);
+  const [reviews, setReviews] = useState([]);
 
-    // Cleanup function
-    return () => {
-      document.body.removeChild(script);
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, "reviews"));
+        const reviewsList = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setReviews(reviewsList);
+      } catch (error) {
+        console.error("Error fetching reviews:", error);
+      }
     };
+
+    fetchReviews();
   }, []);
 
   return (
-    <section className="bg-white">
-      <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-          {/* Left Image Section */}
-          <motion.div 
-            initial={bananaAnimation.initial}
-            whileInView={bananaAnimation.animate}
-            viewport={{ once: true }}
-            transition={bananaAnimation.transition}
-            className="relative flex justify-center"
-          >
-            <img 
-              src={review2} 
-              alt="Sushi" 
-              className="shadow-xl max-w-full sm:w-80 md:w-full sushi"
-            />
-          </motion.div>
-
-          {/* Right Widget Section */}
-          <div className="grid overflow-hidden h-full">
-            <img 
-              src={google_reviews} 
-              alt="Google Reviews" 
-              className="w-full h-full object-contain"
-            />
-            <img 
-              src={google_reviews} 
-              alt="Google Reviews" 
-              className="w-full h-full object-contain"
-            />  
-            {/* <div 
-              className="elfsight-app-e764e504-04d6-4e56-bc1b-bb30ec9e7c1b p-4" 
-              data-elfsight-app-lazy
-            ></div> */}
-          </div>
+    <section className="bg-white py-10">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center text-[#e07e90] mb-6">
+          Customer Reviews
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Reviews Grid */}
+          {reviews.length === 0 ? (
+            <p className="text-gray-500 text-center col-span-3">
+              No reviews yet.
+            </p>
+          ) : (
+            reviews.slice(0, 6).map((review) => (
+              <motion.div
+                key={review.id}
+                initial={cardAnimation.initial}
+                whileInView={cardAnimation.whileInView}
+                viewport={{ once: true }}
+                transition={cardAnimation.transition}
+                className="border-2 border-[#e07e90] bg-white p-6 rounded-lg shadow-lg"
+              >
+                <p className="text-lg mb-2 text-black font-light">
+                  "{review.comment}"
+                </p>
+                <div className="flex items-center gap-1 mb-2 text-[#e07e90]">
+                  {renderStars(review.rating)}
+                </div>
+                <p className="text-sm font-bold text-black">- {review.name}</p>
+              </motion.div>
+            ))
+          )}
         </div>
       </div>
     </section>

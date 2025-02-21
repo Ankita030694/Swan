@@ -11,6 +11,7 @@ import AddOutlet from './pages/Admin/AddOutlet/AddOutlet';
 import Login from './pages/Login/Login';
 import './App.css'
 import Thankyou from './components/Thankyou/Thankyou';
+import AddReview from './pages/Admin/AddReview/AddReview';
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
           <Route path= "/admin/add/outlet"  element={<AddOutlet/>} />
           <Route path= "/login"  element={<Login/>} />
           <Route path= "/thanks"  element={<Thankyou/>} />
+          <Route path= "/addReview"  element={<AddReview/>} />
 
          
         </Routes>

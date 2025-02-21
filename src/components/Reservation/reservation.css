@@ -28,12 +28,12 @@
 
   }
   .glassy-box1 {
-    background: url(../../assets/logo1.png) no-repeat center; /* Light shade of #e07e90 with transparency */
+    background: url(../../assets/logo3.png) no-repeat center; /* Light shade of #e07e90 with transparency */
     backdrop-filter: blur(10px); /* Blur effect */
     -webkit-backdrop-filter: blur(10px); /* For Safari */
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
     max-width: 100%; /* Adjust width as needed */
     height: 50%;
     padding: 15vh;
