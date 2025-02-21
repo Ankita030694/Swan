@@ -47,7 +47,7 @@ const TableReservation = () => {
             <motion.div variants={fadeInUpVariants} className="mt-6">
               <motion.button
                 className="px-8 py-5 bg-[#e07e90] text-lg font-semibold text-white rounded-full border-[#e07e90]
-                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-300 relative anything"
+                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-300 relative anything mt-5"
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"

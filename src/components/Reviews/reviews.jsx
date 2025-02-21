@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { db } from "../../configs/firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
-import review2 from "../../assets/Swan2341.jpg";
+import review2 from "../../assets/2.png";
 
 const cardAnimation = {
   initial: { opacity: 0, y: 30 },
@@ -60,7 +60,7 @@ const Reviews = () => {
   return (
     <section className="bg-white py-10">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-[#e07e90] mb-6">Customer Reviews</h2>
+        <h2 className="text-3xl font-bold text-center text-[#e07e90] mb-6">What People Say About Us?</h2>
         
         {reviews.length === 0 ? (
           <p className="text-gray-500 text-center">No reviews yet.</p>
