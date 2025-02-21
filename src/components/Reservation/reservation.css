@@ -23,13 +23,21 @@
     width: 50%;
     height: 100vh;
   }
+  .table_cont{
+    background: url(../../../public/bg.jpg); /* Light shade of #e07e90 with transparency */
+
+  }
   .glassy-box1 {
-    background: rgba(224, 126, 144, 0.3); /* Light shade of #e07e90 with transparency */
+    background: url(../../assets/logo1.png) no-repeat center; /* Light shade of #e07e90 with transparency */
     backdrop-filter: blur(10px); /* Blur effect */
     -webkit-backdrop-filter: blur(10px); /* For Safari */
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Adjust width as needed */
+    max-width: 100%; /* Adjust width as needed */
+    height: 50%;
+    padding: 15vh;
+    margin-right: -30vh;
   }
+  
   

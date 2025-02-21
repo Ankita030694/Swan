@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import newspaper from "../../assets/newspaper.mp4";
+import newspaper from "../../assets/newspaper1.mp4";
 
 const TableReservation = () => {
   const fadeInUpVariants = {
@@ -23,19 +23,19 @@ const TableReservation = () => {
   };
 
   return (
-    <div className="row">
+    <div className="row table_cont">
       {/* Left Section */}
       <div className="relative col-md-6 bg-white flex items-center justify-center">
         <motion.section
           className="relative flex items-center justify-center h-full w-full"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}  
         >
           {/* Glassy Effect Box */}
           <div
             variants={fadeInUpVariants}
-            className="glassy-box1 p-8 md:p-12 rounded-lg text-center"
+            className="glassy-box1 md:p-12 rounded-lg text-center"
           >
             <h1
               className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-[#e07e90]"
@@ -46,8 +46,8 @@ const TableReservation = () => {
 
             <motion.div variants={fadeInUpVariants} className="mt-6">
               <motion.button
-                className="px-8 py-3 bg-[#e07e90] text-lg font-semibold text-white rounded-full border-[#e07e90]
-                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-300"
+                className="px-8 py-5 bg-[#e07e90] text-lg font-semibold text-white rounded-full border-[#e07e90]
+                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-300 relative anything"
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
