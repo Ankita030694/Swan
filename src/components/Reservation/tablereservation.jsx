@@ -34,19 +34,18 @@ const TableReservation = () => {
         >
           <div
             variants={fadeInUpVariants}
-            className="glassy-box1 p-8 rounded-lg text-center"
+            className="glassy-box1 p-4 md:p-8 rounded-lg text-center"
           >
             <h1
-              className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-[#e07e90]"
+              className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-tight text-[#e07e90]"
               variants={fadeInUpVariants}
             >
               WANT TO BOOK A TABLE?
             </h1>
 
-            <motion.div variants={fadeInUpVariants} className="mt-6">
+            <motion.div variants={fadeInUpVariants} className="mt-4 sm:mt-6">
               <motion.button
-                className="px-6 sm:px-8 py-3 sm:py-5 bg-[#e07e90] text-base sm:text-lg font-semibold text-white rounded-full border-[#e07e90]
-                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-300 relative mt-5"
+                className="px-4 sm:px-6 py-2 sm:py-3 bg-[#e07e90] text-sm sm:text-base md:text-lg font-semibold text-white rounded-full border border-[#e07e90] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-300 relative mt-4"
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
