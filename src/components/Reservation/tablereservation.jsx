@@ -25,7 +25,7 @@ const TableReservation = () => {
   return (
     <div className="flex flex-col md:flex-row table_cont">
       {/* Left Section */}
-      <div className="relative flex-1 bg-white flex items-center justify-center p-4 md:p-0">
+      <div className="relative flex-1 bg-white flex items-center justify-center p-0">
         <motion.section
           className="relative block md:flex items-center justify-center h-full w-full"
           initial="hidden"
@@ -34,7 +34,7 @@ const TableReservation = () => {
         >
           <div
             variants={fadeInUpVariants}
-            className="glassy-box1  md:p-8 rounded-lg text-center"
+            className="glassy-box1 md:p-8 rounded-lg text-center"
           >
             <h1
               className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-tight text-[#e07e90]"
@@ -58,7 +58,7 @@ const TableReservation = () => {
       </div>
 
       {/* Right Section - Video */}
-      <div className="flex-1">
+      <div className="hidden md:block md:flex-1">
         <video
           src={newspaper}
           className="w-full h-[40rem] md:h-screen object-cover"
