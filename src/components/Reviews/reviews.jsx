@@ -60,42 +60,82 @@ const Reviews = () => {
   return (
     <section className="bg-white py-10">
       <div className="container mx-auto px-4">
-        <h2 className="text-6xl font-bold text-center text-[#e07e90] mb-6">What People Say About Us</h2>
+        <h2 className="text-6xl font-bold text-center text-[#e07e90] mb-6">
+          What People Say About Us
+        </h2>
         
         {reviews.length === 0 ? (
           <p className="text-gray-500 text-center">No reviews yet.</p>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            {/* Left Image Section (50%) */}
-            <motion.div 
-              initial={{ x: -100, opacity: 0, rotateY: -30 }}
-              whileInView={{ x: 0, opacity: 1, rotateY: 0 }}
-              viewport={{ once: true }}
-              transition={{ type: "spring", stiffness: 70, damping: 20 }}
-              className="flex justify-center"
-            >
-              <img 
-                src={review2} 
-                alt="Review Image" 
-                className="shadow-xl max-w-full sm:w-80 md:w-full rounded-lg"
-              />
-            </motion.div>
-            {/* Right Review Section (50%) */}
-            <motion.div 
-              key={reviews[currentPage].id}
-              initial={cardAnimation.initial}
-              whileInView={cardAnimation.whileInView}
-              viewport={{ once: true }}
-              transition={cardAnimation.transition}
-              className="border-2 border-[#e07e90] bg-white p-6 rounded-lg shadow-lg"
-              onMouseEnter={() => setIsPaused(true)}
-              onMouseLeave={() => setIsPaused(false)}
-            >
-              <p className="text-lg font-semibold mb-2 text-black">"{reviews[currentPage].comment}"</p>
-              <div className="flex items-center gap-1 mb-2">{renderStars(reviews[currentPage].rating)}</div>
-              <p className="text-sm font-light text-black">- {reviews[currentPage].name}</p>
-            </motion.div>
-          </div>
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+              {/* Left Image Section */}
+              <motion.div 
+                initial={{ x: -100, opacity: 0, rotateY: -30 }}
+                whileInView={{ x: 0, opacity: 1, rotateY: 0 }}
+                viewport={{ once: true }}
+                transition={{ type: "spring", stiffness: 70, damping: 20 }}
+                className="flex justify-center"
+              >
+                <img 
+                  src={review2} 
+                  alt="Review Image" 
+                  className="shadow-xl max-w-full sm:w-80 md:w-full rounded-lg"
+                />
+              </motion.div>
+              {/* Right Review Section */}
+              <div className="flex flex-col items-center">
+                <motion.div 
+                  key={reviews[currentPage].id}
+                  initial={cardAnimation.initial}
+                  whileInView={cardAnimation.whileInView}
+                  viewport={{ once: true }}
+                  transition={cardAnimation.transition}
+                  className="border-2 border-[#e07e90] bg-white p-6 rounded-lg shadow-lg w-full"
+                  onMouseEnter={() => setIsPaused(true)}
+                  onMouseLeave={() => setIsPaused(false)}
+                >
+                  <p className="text-lg font-semibold mb-2 text-black">
+                    "{reviews[currentPage].comment}"
+                  </p>
+                  <div className="flex items-center gap-1 mb-2">
+                    {renderStars(reviews[currentPage].rating)}
+                  </div>
+                  <p className="text-sm font-light text-black">
+                    - {reviews[currentPage].name}
+                  </p>
+                </motion.div>
+                {/* Navigation dots for Desktop (visible only on md and up) */}
+                {reviews.length > 1 && (
+                  <div className="hidden md:flex justify-center mt-4">
+                    {reviews.map((_, index) => (
+                      <div
+                        key={index}
+                        onClick={() => setCurrentPage(index)}
+                        className={`mx-1 w-3 h-3 rounded-full cursor-pointer transition-colors ${
+                          currentPage === index ? "bg-[#e07e90]" : "bg-[#000000]"
+                        }`}
+                      ></div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+            {/* Navigation dots for Mobile (visible only on small screens) */}
+            {reviews.length > 1 && (
+              <div className="flex md:hidden justify-center mt-4">
+                {reviews.map((_, index) => (
+                  <div
+                    key={index}
+                    onClick={() => setCurrentPage(index)}
+                    className={`mx-1 w-3 h-3 rounded-full cursor-pointer transition-colors ${
+                      currentPage === index ? "bg-[#e07e90]" : "bg-[#000000]"
+                    }`}
+                  ></div>
+                ))}
+              </div>
+            )}
+          </>
         )}
       </div>
     </section>
