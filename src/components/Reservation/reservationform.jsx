@@ -234,7 +234,7 @@ const ReservationForm = () => {
   return (
     <div
       style={containerStyle} 
-      className="flex items-center justify-center w-full py-8 h-auto"
+      className="flex items-center justify-center w-full py-8 h-auto px-2"
     >
       <div
         className="w-full max-w-5xl rounded-lg shadow-lg p-8 mt-24 border-[#e07e90] border-2"
