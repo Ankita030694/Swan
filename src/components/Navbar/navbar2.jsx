@@ -98,9 +98,9 @@ const NavbarTwo = () => {
               className="md:hidden p-2 rounded-md text-dark hover:[#e07e90] hover:bg-[#e07e90]"
             >
               {isSidebarOpen ? (
-                <FaX color="CDA177" className="text-2xl" />
+                <FaX color="000000" className="text-2xl" />
               ) : (
-                <FaBars color="CDA177" className="text-2xl" />
+                <FaBars color="000000" className="text-2xl" />
               )}
             </button>
           </div>
