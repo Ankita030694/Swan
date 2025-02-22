@@ -34,7 +34,7 @@ const TableReservation = () => {
         >
           <div
             variants={fadeInUpVariants}
-            className="glassy-box1 p-4 md:p-8 rounded-lg text-center"
+            className="glassy-box1  md:p-8 rounded-lg text-center"
           >
             <h1
               className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-tight text-[#e07e90]"
