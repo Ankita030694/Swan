@@ -57,19 +57,19 @@ const Home = () => {
           <Reviews />
           <Footer />
           {/* Sticky Buttons */}
-          <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 p-1 flex justify-around bg-[#e07e90] shadow-lg border-2 border-[#000000] rounded-lg">
+          <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 p-1 flex justify-around bg-[#000000] shadow-lg border-2 border-[#ffffff] rounded-lg">
             <a href="tel:+919870587770">
               <button
-                className="bg-[#e07e90] text-[#ffffff] p-3 rounded-full w-32"
+                className="bg-[#000000] text-[#ffffff] p-3 rounded-full w-32"
               >
                 Call Us
               </button>
             </a>
-            <div className="h-12 w-px bg-[#a47148]"></div>{" "}
+            <div className="h-12 w-px bg-[#ffffff]"></div>{" "}
             {/* Vertical Line Divider */}
             <a href="/reservation">
               <button
-                className="bg-[#e07e90] text-[#ffffff] p-3 rounded-full w-32"
+                className="bg-[#000000] text-[#ffffff] p-3 rounded-full w-32"
                 
               >
                 Reservation
