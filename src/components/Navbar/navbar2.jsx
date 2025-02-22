@@ -95,7 +95,7 @@ const NavbarTwo = () => {
             {/* Mobile menu button */}
             <button
               onClick={toggleSidebar}
-              className="md:hidden p-2 rounded-md text-gray-400 hover:[#e07e90] hover:bg-[#e07e90]"
+              className="md:hidden p-2 rounded-md text-dark hover:[#e07e90] hover:bg-[#e07e90]"
             >
               {isSidebarOpen ? (
                 <FaX color="CDA177" className="text-2xl" />
