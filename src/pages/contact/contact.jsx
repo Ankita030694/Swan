@@ -68,8 +68,8 @@ const ContactUs = () => {
             transition={{ duration: 0.6 }}
             className="flex flex-col justify-center"
           >
-            <div className='shadow-lg bg-white p-8 rounded-lg border-2 border-[#e07e90]'>
-              <h1 className="text-4xl font-bold text-[#e07e90] mb-6">Contact Us</h1>
+            <div className='shadow-lg bg-white p-8 rounded-lg border-2 border-[#000000]'>
+              <h1 className="text-4xl font-bold text-[#000000] mb-6">Contact Us</h1>
               <p className="text-gray-700 mb-6">
               ward no 1, Kharsra No 1501, 1st Floor, Kalka Das Marg, Mehrauli, New Delhi, Delhi 110030
               </p>
@@ -92,9 +92,9 @@ const ContactUs = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-white rounded-lg p-8 shadow-lg border-2 border-[#e07e90]"
+            className="bg-white rounded-lg p-8 shadow-lg border-2 border-[#000000]"
           >
-            <h2 className="text-3xl font-bold text-[#e07e90] mb-6">Get in Touch</h2>
+            <h2 className="text-3xl font-bold text-[#000000] mb-6">Get in Touch</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-1">
                 <input

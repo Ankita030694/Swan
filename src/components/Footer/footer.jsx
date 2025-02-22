@@ -33,16 +33,16 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <FaInstagram />,
-      href: "https://www.instagram.com/_botai?igsh=bWZsYzFkZmVnZG53",
+      href: "https://www.instagram.com/swandelhi/?hl=en",
     },
     {
       icon: <FaFacebookF />,
-      href: "https://www.facebook.com/share/1CbPaXgv33/?mibextid=wwXIfr",
+      href: "https://www.facebook.com/swanqutub/",
     },
   ];
 
   return (
-    <footer className="bg-[#000000] text-[#e07e90] pb-12 border-4">
+    <footer className="bg-[#000000] text-white pb-12">
       <div className="container mx-auto px-5">
         <div className="flex flex-wrap justify-around">
           {/* Logo and Description */}
@@ -61,12 +61,10 @@ const Footer = () => {
                 style={{marginTop: "-30px"}}
               />
             </a>
-            <p className="text-[#e07e90] mb-8">
+            <p className=" mb-8">
               A Modern Thai bar & Grill concept blending cosmopolitan Italian
-              design with the vibrance of Thai hues.
+              design with the vibrance of Thai hues
             </p>
-
-
             {/* Social Media Links */}
             <motion.div
               initial={bananaAnimation.initial}
@@ -83,7 +81,7 @@ const Footer = () => {
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: 1.2 + index * 0.1 }}
-                  className="text-[#e07e90] transition-colors text-2xl"
+                  className="transition-colors text-2xl"
                   aria-label={link.icon}
                 >
                   {link.icon}

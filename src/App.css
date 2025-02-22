@@ -5,9 +5,15 @@
     width: 100%;
     height: 100%;
 }
+.insta_img{
+    max-width: 75%;
+}
 @media screen and (max-width: 767px){
     .sushi{
         display: none;
+    }
+    .insta_img{
+        max-width: 100%;
     }
 }
 .about_carousel{

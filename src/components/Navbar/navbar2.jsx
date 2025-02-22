@@ -95,7 +95,7 @@ const NavbarTwo = () => {
             {/* Mobile menu button */}
             <button
               onClick={toggleSidebar}
-              className="md:hidden p-2 rounded-md text-gray-400 hover:border-orange-100 hover:bg-brown"
+              className="md:hidden p-2 rounded-md text-gray-400 hover:[#e07e90] hover:bg-[#e07e90]"
             >
               {isSidebarOpen ? (
                 <FaX color="CDA177" className="text-2xl" />
@@ -117,13 +117,13 @@ const NavbarTwo = () => {
           className="fixed inset-0 bg-gray-600 bg-opacity-75"
           onClick={toggleSidebar}
         ></div>
-        <div className="fixed inset-y-0 right-0 max-w-xs w-full bg-brown-100 shadow-xl flex flex-col">
+        <div className="fixed inset-y-0 right-0 max-w-xs w-full bg-white shadow-xl flex flex-col">
           <div className="flex-1 pt-32 px-4">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.path}
-                className="block py-3 text-base font-medium text-brown hover:bg-orange-100 rounded-md"
+                className="block py-3 text-base font-medium text-brown rounded-md"
                 onClick={toggleSidebar}
               >
                 {item.name}
@@ -131,13 +131,13 @@ const NavbarTwo = () => {
             ))}
             <div className="mt-6 space-y-4">
               <a href="tel:+919870587770">
-                <button className="w-full px-4 py-2 bg-brown text-white rounded-lg hover:bg-brown-400">
+                <button className="w-full px-4 py-2 bg-white text-dark rounded-lg border-2 border-[#000000]">
                   Call Us
                 </button>
               </a>
               <div></div>
               <a href="/reservation">
-                <button className="w-full px-4 py-2 bg-brown text-white rounded-lg">
+                <button className="w-full px-4 py-2 bg-white text-dark rounded-lg border-2 border-[#000000]">
                   Reservation
                 </button>
               </a>

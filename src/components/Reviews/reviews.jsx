@@ -60,7 +60,7 @@ const Reviews = () => {
   return (
     <section className="bg-white py-10">
       <div className="container mx-auto px-4">
-        <h2 className="text-6xl font-bold text-center text-[#e07e90] mb-6">What People Say About Us?</h2>
+        <h2 className="text-6xl font-bold text-center text-[#e07e90] mb-6">What People Say About Us</h2>
         
         {reviews.length === 0 ? (
           <p className="text-gray-500 text-center">No reviews yet.</p>
@@ -80,7 +80,6 @@ const Reviews = () => {
                 className="shadow-xl max-w-full sm:w-80 md:w-full rounded-lg"
               />
             </motion.div>
-
             {/* Right Review Section (50%) */}
             <motion.div 
               key={reviews[currentPage].id}
