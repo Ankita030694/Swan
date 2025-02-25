@@ -66,20 +66,20 @@ const AddReview = () => {
             required
           />
 
-          <div className="flex flex-col w-full">
+          <div className="w-full flex flex-col">
             <input
               {...register("dob")}
               type="date"
-              className="block w-full p-2 border rounded"
+              className="w-full p-2 border rounded"
             />
             <small>Date Of Birth</small>
           </div>
 
-          <div className="flex flex-col w-full">
+          <div className="w-full flex flex-col">
             <input
               {...register("anniversary")}
               type="date"
-              className="block w-full p-2 border rounded"
+              className="w-full p-2 border rounded"
             />
             <small>Date Of Anniversary</small>
           </div>
