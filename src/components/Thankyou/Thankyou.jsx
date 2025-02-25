@@ -1,11 +1,12 @@
 import React from "react";
-import reserve from "../../assets/formbg.png";
+import reserve from "../../assets/thanks.jpeg";
 import NavbarTwo from "../Navbar/navbar2";
 import Footer from "../Footer/footer";
 import { Link } from "react-router-dom";
 
 const Thankyou = () => {
   const containerStyle = {
+    backgroundImage: `url(${reserve})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
