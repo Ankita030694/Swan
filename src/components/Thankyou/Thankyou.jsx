@@ -20,7 +20,7 @@ const Thankyou = () => {
         style={containerStyle}
         className="flex items-center justify-center w-full"
       >
-        <div className="w-full max-w-2xl mx-4 bg-white bg-opacity-95 rounded-lg shadow-lg p-16 text-center">
+        <div className="w-full max-w-2xl mx-4 bg-transparent bg-opacity-20 backdrop-blur-lg rounded-lg shadow-lg p-16 text-center">
           <h2 className="text-3xl font-bold text-[#000000] mb-4">
             Thank You!
           </h2>
