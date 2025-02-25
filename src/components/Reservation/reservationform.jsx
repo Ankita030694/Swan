@@ -28,6 +28,9 @@ const ReservationForm = () => {
 
   const [errors, setErrors] = useState({});
 
+  // Add new state to track if timing type is selected
+  const [showTimeSlots, setShowTimeSlots] = useState(false);
+
   useEffect(() => {
     getOutlets();
   }, []);
@@ -63,6 +66,8 @@ const ReservationForm = () => {
     handleInputChange("timing", slotType);
     // Reset selected time slot when filtering changes available options
     handleInputChange("timeSlot", "");
+    // Show time slots after selecting timing
+    setShowTimeSlots(true);
   };
 
   const handleCounter = (e) => {
@@ -130,6 +135,10 @@ const ReservationForm = () => {
 
     if (!formData.date) {
       newErrors.date = "Please select a date";
+    }
+
+    if (!formData.timing) {
+      newErrors.timing = "Please select lunch or dinner time";
     }
 
     if (!formData.timeSlot) {
@@ -545,29 +554,34 @@ const ReservationForm = () => {
               </button>
             </div>
           </div>
+          {errors.timing && (
+            <p className="text-red-500 text-sm text-center">{errors.timing}</p>
+          )}
 
           {/* Time Slot Selection */}
-          <div className="space-y-2 align items-center">
-            <div className="grid grid-cols-3 gap-2">
-              {timeSlots.map((slot, index) => (
-                <button
-                  key={index}
-                  type="button"
-                  onClick={() => handleInputChange("timeSlot", slot)}
-                  className={`p-2 rounded-md transition-colors duration-200 ${
-                    formData.timeSlot === slot
-                      ? "bg-[#e07e90] font-semibold text-white"
-                      : "bg-white hover:bg-gray-200"
-                  }`}
-                >
-                  {slot}
-                </button>
-              ))}
+          {showTimeSlots && (
+            <div className="space-y-2 align items-center">
+              <div className="grid grid-cols-3 gap-2">
+                {timeSlots.map((slot, index) => (
+                  <button
+                    key={index}
+                    type="button"
+                    onClick={() => handleInputChange("timeSlot", slot)}
+                    className={`p-2 rounded-md transition-colors duration-200 ${
+                      formData.timeSlot === slot
+                        ? "bg-[#e07e90] font-semibold text-white"
+                        : "bg-white hover:bg-gray-200"
+                    }`}
+                  >
+                    {slot}
+                  </button>
+                ))}
+              </div>
+              {errors.timeSlot && (
+                <p className="text-red-500 text-sm">{errors.timeSlot}</p>
+              )}
             </div>
-            {errors.timeSlot && (
-              <p className="text-red-500 text-sm">{errors.timeSlot}</p>
-            )}
-          </div>
+          )}
 
           {/* Submit Button */}
           <button

@@ -146,63 +146,6 @@ const GallerySection = () => {
         <div className="about_carousel">
           <img src={photo20} alt="" />
         </div>
-        <div className="about_carousel">
-          <img src={photo21} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo22} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo23} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo24} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo25} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo26} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo27} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo28} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo29} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo30} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo31} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo32} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo33} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo34} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo35} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo36} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo37} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo38} alt="" />
-        </div>
-        <div className="about_carousel">
-          <img src={photo39} alt="" />
-        </div>
       </Carousel>
     </div>
   );
