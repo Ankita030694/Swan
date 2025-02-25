@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import story from '../../assets/story2.png'
 import location from "../../assets/about/ourstory.jpg"
 import ourstory from "../../assets/ourstory.mp4"
+
 const OurStory = () => {
   const titleVariants = {
     hidden: { 
@@ -50,8 +51,9 @@ const OurStory = () => {
   };
 
   return (
-    <div className="w-full py-16 px-8 bg-[#fae6e7]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
+    <div className="w-full py-16 px-8 bg-[#fae6e7] relative">
+   
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 relative z-10">
         {/* Left side - Title */}
         <motion.div 
           className="md:w-1/3"
@@ -85,7 +87,7 @@ const OurStory = () => {
             viewport={{ once: true, margin: "-100px" }}
             variants={contentVariants}
           >
-           Bo Tai is a modern Thai bar and grill concept that seamlessly blends cosmopolitan Italian design with vibrant Thai elements. With its chic yet cozy ambiance, Bo Tai is crafted for the young, stylish, and socially savvy crowd. The name itself, a playful pun on “bow-tie,” reflects the sophistication and bold flavors of its Oriental-inspired cuisine. Combining contemporary Thai and Italian influences, Bo Tai offers a unique culinary experience set against an international backdrop that celebrates both style and flavor.
+           Bo Tai is a modern Thai bar and grill concept that seamlessly blends cosmopolitan Italian design with vibrant Thai elements. With its chic yet cozy ambiance, Bo Tai is crafted for the young, stylish, and socially savvy crowd. The name itself, a playful pun on "bow-tie," reflects the sophistication and bold flavors of its Oriental-inspired cuisine. Combining contemporary Thai and Italian influences, Bo Tai offers a unique culinary experience set against an international backdrop that celebrates both style and flavor.
           </motion.p>
 
           {/* Stats */}

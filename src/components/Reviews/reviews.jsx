@@ -60,7 +60,7 @@ const Reviews = () => {
   return (
     <section className="bg-white py-10">
       <div className="container mx-auto px-4">
-        <h2 className="text-6xl font-bold text-center text-[#e07e90] mb-6">
+        <h2 className="text-6xl font-bold text-center text-[#e07e90]" style={{ marginBottom: "50px" }}>
           What People Say About Us
         </h2>
         
@@ -113,7 +113,7 @@ const Reviews = () => {
                         key={index}
                         onClick={() => setCurrentPage(index)}
                         className={`mx-1 w-3 h-3 rounded-full cursor-pointer transition-colors ${
-                          currentPage === index ? "bg-[#e07e90]" : "bg-[#000000]"
+                          currentPage === index ? "bg-[#e07e90]" : "bg-[#A9A9A9]"
                         }`}
                       ></div>
                     ))}
@@ -129,7 +129,7 @@ const Reviews = () => {
                     key={index}
                     onClick={() => setCurrentPage(index)}
                     className={`mx-1 w-3 h-3 rounded-full cursor-pointer transition-colors ${
-                      currentPage === index ? "bg-[#e07e90]" : "bg-[#000000]"
+                      currentPage === index ? "bg-[#e07e90]" : "bg-[#A9A9A9]"
                     }`}
                   ></div>
                 ))}

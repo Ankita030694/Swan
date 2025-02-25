@@ -2,7 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import newspaper from "../../assets/newspaper1.mp4";
-
+import image1 from "../../assets/image1.png";
+import image2 from "../../assets/image2.png";
+import imagebg from "../../assets/imagebg.png";
 const TableReservation = () => {
   const fadeInUpVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -23,23 +25,33 @@ const TableReservation = () => {
   };
 
   return (
-    <div className="w-full bg-[#fae6e7] py-16">
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="w-full py-16 relative">
+      <div className="max-w-full mx-auto px-4 bg-white rounded-lg shadow-[0_4px_20px_rgba(233,114,132,0.3)] p-8 relative">
+        <img 
+          src={image1} 
+          alt="Decorative left" 
+          className="absolute -left-1 w-40 h-40 object-contain z-10"
+        />
+        <img 
+          src={image2} 
+          alt="Decorative right" 
+          className="absolute -right-1 w-40 h-40 object-contain z-10"
+        />
         <motion.div
-          className="text-center"
+          className="text-center relative z-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUpVariants}
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#e07e90] mb-8">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#000000] mb-8">
             WANT TO BOOK A TABLE?
           </h2>
 
           <motion.div className="mt-8">
             <Link to="/reservation">
               <motion.button
-                className="px-8 py-4 bg-[#e07e90] text-lg font-semibold text-white rounded-full hover:bg-[#c96476] transition-colors duration-300 shadow-lg"
+                className="px-8 py-4 bg-[#ffffff] text-lg font-semibold text-dark rounded-full hover:bg-[#c96476] transition-colors duration-300 shadow-lg"
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
