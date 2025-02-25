@@ -6,30 +6,29 @@ import { Link } from "react-router-dom";
 
 const Thankyou = () => {
   const containerStyle = {
-    backgroundImage: `url('${reserve}')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     minHeight: "100vh",
+    backgroundColor: "rgba(244, 182, 193, 0.17)", // Light tint of #e07e90
   };
   return (
-    <div>
+    <div className="bg-black">
       <NavbarTwo />
       <div
         style={containerStyle}
         className="flex items-center justify-center w-full"
       >
-        <div className="w-full max-w-2xl mx-4 bg-brown-300 bg-opacity-opacity-100 rounded-lg shadow-lg p-16 text-center">
-          <h2 className="text-3xl font-bold text-[#4A3427] -100 mb-4">
+        <div className="w-full max-w-2xl mx-4 bg-white bg-opacity-95 rounded-lg shadow-lg p-16 text-center">
+          <h2 className="text-3xl font-bold text-[#000000] mb-4">
             Thank You!
           </h2>
-          <p className="text-[#4A3427]  font-medium mb-6">
+          <p className="text-[#000000] font-medium mb-6">
             Your reservation has been successfully submitted.
           </p>
           <Link to="/reservation">
             <button
-              // onClick={() => setShowThankYou(false)}
-              className="bg-orange-100 hover:bg-brown-400 hover:text-orange-100 text-[#4A3427]  font-medium py-2 px-6 rounded-lg transition-colors duration-200"
+              className="bg-[#ffffff] hover:bg-[#000000] hover:text-white text-dark font-medium py-2 px-6 rounded-lg transition-colors duration-200 border-2 border-dark"
             >
               Make Another Reservation
             </button>
