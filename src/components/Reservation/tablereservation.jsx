@@ -23,49 +23,32 @@ const TableReservation = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row table_cont">
-      {/* Left Section */}
-      <div className="relative flex-1 bg-white flex items-center justify-center p-0">
-        <motion.section
-          className="relative block md:flex items-center justify-center h-full w-full"
+    <div className="w-full bg-[#fae6e7] py-16">
+      <div className="max-w-7xl mx-auto px-4">
+        <motion.div
+          className="text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
+          variants={fadeInUpVariants}
         >
-          <div
-            variants={fadeInUpVariants}
-            className="glassy-box1 md:p-8 rounded-lg text-center"
-          >
-            <h1
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-tight text-[#e07e90]"
-              variants={fadeInUpVariants}
-            >
-              WANT TO BOOK A TABLE?
-            </h1>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#e07e90] mb-8">
+            WANT TO BOOK A TABLE?
+          </h2>
 
-            <motion.div variants={fadeInUpVariants} className="mt-4 sm:mt-6">
+          <motion.div className="mt-8">
+            <Link to="/reservation">
               <motion.button
-                className="px-4 sm:px-6 py-2 sm:py-3 bg-[#e07e90] text-sm sm:text-base md:text-lg font-semibold text-white rounded-full border border-[#e07e90] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-300 relative mt-4"
+                className="px-8 py-4 bg-[#e07e90] text-lg font-semibold text-white rounded-full hover:bg-[#c96476] transition-colors duration-300 shadow-lg"
                 variants={buttonVariants}
                 whileHover="hover"
                 whileTap="tap"
               >
-                <Link to="/reservation">Book a Table Now</Link>
+                Book a Table Now
               </motion.button>
-            </motion.div>
-          </div>
-        </motion.section>
-      </div>
-
-      {/* Right Section - Video */}
-      <div className="hidden md:block md:flex-1">
-        <video
-          src={newspaper}
-          className="w-full h-[40rem] md:h-screen object-cover"
-          autoPlay
-          muted
-          loop
-        ></video>
+            </Link>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

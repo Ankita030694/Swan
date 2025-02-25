@@ -9,13 +9,20 @@ const NavbarTwo = () => {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
     { name: "ABOUT", path: "/about" },
     // { name: "RESERVATION", path: "/reservation" },
     { name: "CONTACT", path: "/contact" },
-    { name: "MENU", path: pdf, newTab: true },
   ];
+
+  const menuItems = [
+    { name: "MENU 1", path: pdf },
+    { name: "MENU 2", path: pdf },
+    { name: "MENU 3", path: pdf },
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -30,11 +37,15 @@ const NavbarTwo = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="relative">
       {/* Main Navbar */}
       <nav
-        className={`fixed h-21 left-0 right-0 z-50 transition-all duration-300 bg-white` }
+        className={`fixed h-21 left-0 right-0 z-50 transition-all duration-300 bg-white`}
       >
         <div className="max-w-7xl mx-auto p-8">
           <div className="flex items-center justify-between">
@@ -44,8 +55,6 @@ const NavbarTwo = () => {
                 <a
                   key={item.name}
                   href={item.path}
-                  target={item.newTab ? "_blank" : ""}
-                  rel={item.newTab ? "noopener noreferrer" : ""}
                   className={`text-md font-medium transition-colors duration-300 py-2 px-4 rounded-lg ${
                     isScrolled
                       ? "text-dark hover:text-[#000000]"
@@ -55,6 +64,35 @@ const NavbarTwo = () => {
                   {item.name}
                 </a>
               ))}
+              {/* Menu Dropdown */}
+              <div className="relative">
+                <button
+                  onClick={toggleMenu}
+                  className={`text-md font-medium transition-colors duration-300 py-2 px-4 rounded-lg ${
+                    isScrolled
+                      ? "text-dark hover:text-[#000000]"
+                      : "text-dark font-medium hover:text-[#000000]"
+                  }`}
+                >
+                  MENU
+                </button>
+                {isMenuOpen && (
+                  <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg">
+                    {menuItems.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-4 py-2 text-dark hover:bg-gray-100"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
             {/* Logo */}
             <div className="flex">
@@ -73,20 +111,6 @@ const NavbarTwo = () => {
               <Link
                 to={"/reservation"}
                 className="px-4 py-2 bg-dark border-2 font-medium rounded-lg text-white bg-[#000000] hover:bg-white hover:text-[#000000] hover:border-2 hover:border-[#000000]"
-                // style={{
-                //   transition: "background-color 0.3s ease, border 0.3s ease",
-                //   border: "2px solid", // Default border is transparent
-                // }}
-                // onMouseEnter={(e) => {
-                //   e.target.style.backgroundColor = "#ffffff";
-                //   e.target.style.borderColor = "#ffffff"; // Add black border
-                //   e.target.style.color = "#000000";
-                // }}
-                // onMouseLeave={(e) => {
-                //   e.target.style.backgroundColor = "#ffffff"; // Reset background
-                //   e.target.style.borderColor = "#ffffff"; // Reset border
-                //   e.target.style.color = "#000000";
-                // }}
               >
                 Reservation
               </Link>
@@ -123,6 +147,19 @@ const NavbarTwo = () => {
               <a
                 key={item.name}
                 href={item.path}
+                className="block py-3 text-base font-medium text-brown rounded-md"
+                onClick={toggleSidebar}
+              >
+                {item.name}
+              </a>
+            ))}
+            {/* Mobile Menu Items */}
+            {menuItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.path}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block py-3 text-base font-medium text-brown rounded-md"
                 onClick={toggleSidebar}
               >

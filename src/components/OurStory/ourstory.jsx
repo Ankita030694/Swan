@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import story from '../../assets/story2.png'
 import location from "../../assets/about/ourstory.jpg"
+import ourstory from "../../assets/ourstory.mp4"
 const OurStory = () => {
   const titleVariants = {
     hidden: { 
@@ -49,22 +50,30 @@ const OurStory = () => {
   };
 
   return (
-    <div className="w-full py-16 px-8">
+    <div className="w-full py-16 px-8 bg-[#fae6e7]">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Left side - Title */}
-        {/* <motion.div 
-          className="md:w-1/3 ourstimage"
+        <motion.div 
+          className="md:w-1/3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={titleVariants}
-          style={{ backgroundImage: `url(${location})` }}
         >
-          
-        </motion.div> */}
+          <video
+            className="w-full h-full object-cover rounded-lg"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src={ourstory} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </motion.div>
 
         {/* Right side - Content */}
-        <div className="md:w-3/3 flex flex-col gap-8 text-center">
+        <div className="md:w-2/3 flex flex-col gap-8 text-center">
         <h2 className="text-[#e07e90] text-6xl font-bold">
             OUR STORY
           </h2>
