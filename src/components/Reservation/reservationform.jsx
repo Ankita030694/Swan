@@ -532,7 +532,7 @@ const ReservationForm = () => {
                 onClick={() => filterTimeSlots("lunch")}
                 className={`p-2 rounded-md transition-colors duration-200 md:w-48 ${
                   formData.timing === "lunch"
-                    ? "bg-[#e07e90] font-semibold text-white"
+                    ? "bg-[#758b6b] font-semibold text-white"
                     : "bg-white hover:bg-gray-200"
                 }`}
               >
@@ -546,7 +546,7 @@ const ReservationForm = () => {
                 onClick={() => filterTimeSlots("dinner")}
                 className={`p-2 rounded-md transition-colors duration-200 md:w-48 ${
                   formData.timing === "dinner"
-                    ? "bg-[#e07e90] font-semibold text-white"
+                    ? "bg-[#758b6b] font-semibold text-white"
                     : "bg-white hover:bg-gray-200"
                 }`}
               >
@@ -569,7 +569,7 @@ const ReservationForm = () => {
                     onClick={() => handleInputChange("timeSlot", slot)}
                     className={`p-2 rounded-md transition-colors duration-200 ${
                       formData.timeSlot === slot
-                        ? "bg-[#e07e90] font-semibold text-white"
+                        ? "bg-[#758b6b] font-semibold text-white"
                         : "bg-white hover:bg-gray-200"
                     }`}
                   >
