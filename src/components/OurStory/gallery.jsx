@@ -36,7 +36,7 @@ const BoTaiGallery = () => {
       viewport={{ once: true }}
     >
       {/* Responsive Wrapper for Elfsight Widget */}
-      <div className="relative z-10 w-full max-w-[90%] md:max-w-[70%] lg:max-w-[50%]">
+      <div className="relative z-10 w-full max-w-[90%] md:max-w-[90%] lg:max-w-[100%]">
         <div className="elfsight-app-4d7ca820-d3ff-43ef-9384-774a5ade1d5c" data-elfsight-app-lazy></div>
       </div>
     </motion.div>

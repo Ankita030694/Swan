@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import ReservationBanner from "../components/Reservation/tablereservation";
 import BoTaiGallery from "../components/OurStory/gallery";
 import Lottie from "lottie-react";
-import loadingAnimation from "../assets/swanloader1.json";
+import loadingAnimation from "../assets/latestloader.mp4";
 import NavbarTwo from "../components/Navbar/navbar2";
 const LoadingScreen = () => {
   return (
@@ -19,7 +19,7 @@ const LoadingScreen = () => {
       transition={{ duration: 0.3 }}
     >
       <div className="w-64 h-64">
-        <Lottie animationData={loadingAnimation} loop={true} autoplay={true} />
+        <video src={loadingAnimation} autoPlay loop muted />
       </div>
     </motion.div>
   );
@@ -33,7 +33,7 @@ const Home = () => {
     // Simulate loading time or replace with actual data loading
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // 2 seconds loading time
+    }, 1500); // 2 seconds loading time
 
     return () => clearTimeout(timer);
   }, []);

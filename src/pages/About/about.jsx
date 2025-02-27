@@ -38,7 +38,7 @@ const About = () => {
       </div>
 
       <OurLocation />
-      <AboutGallery />
+      {/* <AboutGallery /> */}
       
 
       <Footer />
