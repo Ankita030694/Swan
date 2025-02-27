@@ -12,6 +12,7 @@ import about7 from "../../assets/about/7.jpeg";
 import about8 from "../../assets/about/8.jpeg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import LogoSlider from "../LogoSlider/logoslider";
 const locations = [
   {
     city: "GOA",
@@ -53,7 +54,7 @@ const responsive = {
 };
 const OurLocation = () => {
   return (
-    <div className="w-full mx-auto px-4 bg-[#fae6e7] m-10 align-items-center">
+    <div className="w-full mx-auto px-4 bg-[#758b6b] m-10 align-items-center">
       {/* Header Text */}
       <div className="text-center  max-w-6xl mx-auto">
         <p className="text-lg text-black pt-12">
@@ -81,6 +82,7 @@ const OurLocation = () => {
           Indian food and night life.
         </p>
       </div>
+      <LogoSlider />
 
       {/* Locations Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-8 mb-10 mt-10">

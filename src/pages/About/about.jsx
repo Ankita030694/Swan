@@ -39,7 +39,7 @@ const About = () => {
 
       <OurLocation />
       <AboutGallery />
-      <LogoSlider />
+      
 
       <Footer />
     </div>

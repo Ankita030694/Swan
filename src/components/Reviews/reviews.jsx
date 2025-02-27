@@ -60,7 +60,7 @@ const Reviews = () => {
   return (
     <section className="bg-white py-10">
       <div className="container mx-auto px-4">
-        <h2 className="text-6xl font-bold text-center text-[#e07e90]" style={{ marginBottom: "50px" }}>
+        <h2 className="text-6xl font-bold text-center text-[#000000]" style={{ marginBottom: "50px" }}>
           What People Say About Us
         </h2>
         
@@ -91,7 +91,7 @@ const Reviews = () => {
                   whileInView={cardAnimation.whileInView}
                   viewport={{ once: true }}
                   transition={cardAnimation.transition}
-                  className="border-2 border-[#e07e90] bg-white p-6 rounded-lg shadow-lg w-full"
+                  className="border-2 border-[#758b6b] bg-white p-6 rounded-lg shadow-lg w-full"
                   onMouseEnter={() => setIsPaused(true)}
                   onMouseLeave={() => setIsPaused(false)}
                 >
@@ -113,7 +113,7 @@ const Reviews = () => {
                         key={index}
                         onClick={() => setCurrentPage(index)}
                         className={`mx-1 w-3 h-3 rounded-full cursor-pointer transition-colors ${
-                          currentPage === index ? "bg-[#e07e90]" : "bg-[#A9A9A9]"
+                          currentPage === index ? "bg-[#758b6b]" : "bg-[#A9A9A9]"
                         }`}
                       ></div>
                     ))}

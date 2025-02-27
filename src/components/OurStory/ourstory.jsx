@@ -51,7 +51,7 @@ const OurStory = () => {
   };
 
   return (
-    <div className="w-full py-16 px-8 bg-[#fae6e7] relative">
+    <div className="w-full py-16 px-8 bg-[#758b6b] relative">
    
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 relative z-10">
         {/* Left side - Title */}
@@ -76,7 +76,7 @@ const OurStory = () => {
 
         {/* Right side - Content */}
         <div className="md:w-2/3 flex flex-col gap-8 text-center">
-        <h2 className="text-[#e07e90] text-6xl font-bold">
+        <h2 className="text-[#000000] text-6xl font-bold">
             OUR STORY
           </h2>
           {/* Description */}
@@ -94,38 +94,38 @@ const OurStory = () => {
           <div className="flex flex-wrap gap-6">
             {/* Outlets stat */}
             <motion.div 
-              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2 border-[#e07e90]"
+              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2 border-[#000000]"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={statCardVariants}
             >
               {/* <div className="text-4xl font-bold mb-2">Handmade Syrups</div> */}
-              <div className="text-xl text-center text-[#e07e90] border-[#e07e90]">Handmade Syrups</div>
+              <div className="text-xl text-center text-[#000000] border-[#000000]">Handmade Syrups</div>
             </motion.div>
 
             {/* Awards stat */}
             <motion.div 
-              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2 border-[#e07e90]"
+              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2 border-[#000000]"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={statCardVariants}
             >
               {/* <div className="text-4xl font-bold mb-2">Live Sushi Bar</div> */}
-              <div className="text-xl text-center text-[#e07e90] border-[#e07e90]" >Live Sushi Bar</div>
+              <div className="text-xl text-center text-[#000000] border-[#e07e90]" >Live Sushi Bar</div>
             </motion.div>
 
             {/* Additional Awards stat */}
             <motion.div 
-              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2 border-[#e07e90]"
+              className="flex-1 min-w-[200px] rounded-2xl p-6 border-2 border-[#000000]"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-50px" }}
               variants={statCardVariants}
             >
               {/* <div className="text-4xl font-bold mb-2">Infinity View</div> */}
-              <div className="text-xl text-center text-[#e07e90] border-[#e07e90]">Infinity View</div>
+              <div className="text-xl text-center text-[#000000] border-[#e07e90]">Infinity View</div>
             </motion.div>
           </div>
         </div>

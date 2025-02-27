@@ -242,11 +242,11 @@ const ReservationForm = () => {
 
   return (
     <div
-      style={containerStyle} 
+      // style={containerStyle} 
       className="flex items-center justify-center w-full py-8 h-auto px-2"
     >
       <div
-        className="w-full max-w-5xl rounded-lg shadow-lg p-8 mt-24 border-[#e07e90] border-2"
+        className="w-full max-w-5xl rounded-lg shadow-lg p-8 mt-24 border-[#758b6b] border-2"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
       >
         <div className="mb-8 text-center">
@@ -587,7 +587,7 @@ const ReservationForm = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-[#e07e90] text-white hover:bg-white font-semibold hover:text-[#e07e90] py-3 rounded-lg transition-colors duration-200 disabled:bg-orange-300"
+            className="w-full bg-[#758b6b] text-white hover:bg-white font-semibold hover:text-[#758b6b] py-3 rounded-lg transition-colors duration-200 disabled:bg-orange-300"
           >
             {loading ? "Please Wait .." : "Submit"}
           </button>
