@@ -5,6 +5,7 @@ import loadingAnimation from "../../assets/loader-old.json";
 import Lottie from "lottie-react";
 import "./reservation.css";
 import { useNavigate } from "react-router-dom";
+import reservationbg from "../../assets/reservationbg.jpg";
 
 const ReservationForm = () => {
   const navigate = useNavigate();
@@ -233,7 +234,7 @@ const ReservationForm = () => {
   };
 
   const containerStyle = {
-    backgroundImage: `url('${reserve}')`,
+    backgroundImage: `url('${reservationbg}')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -242,7 +243,7 @@ const ReservationForm = () => {
 
   return (
     <div
-      // style={containerStyle} 
+      style={containerStyle} 
       className="flex items-center justify-center w-full py-8 h-auto px-2"
     >
       <div
