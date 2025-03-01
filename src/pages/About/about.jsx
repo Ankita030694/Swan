@@ -1,5 +1,4 @@
 import React from 'react';
-import aboutheader from '../../assets/about2.jpg';
 import TableReservation from '../../components/Reservation/reservationComponent';
 import OurLocation from '../../components/ourlocation/ourlocation';
 import AboutGallery from '../../components/AboutGallery/aboutgallery';
@@ -7,7 +6,7 @@ import Footer from '../../components/Footer/footer';
 import NavbarTwo from '../../components/Navbar/navbar2';
 import LogoSlider from '../../components/LogoSlider/logoslider';
 import Navbar from '../../components/Navbar/navbar';
-
+import aboutheader from '../../assets/Swan2147.jpg';
 
 const About = () => {
   return (
