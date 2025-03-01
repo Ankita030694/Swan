@@ -7,6 +7,6 @@ import WhatsappFAB from './components/WaFAB/WhatsappFab.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <WhatsappFAB number={'+919870587770'}/>
+    <WhatsappFAB number={'+918130933899'}/>
   </StrictMode>,
 )

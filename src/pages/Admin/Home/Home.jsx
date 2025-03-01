@@ -5,7 +5,7 @@ function Home() {
     return (
         < >
             <AdminNavbar />
-            <main className='w-screen h-screen bg-brown' >
+            <main className='w-screen h-screen bg-white' >
 
             </main>
         </>
