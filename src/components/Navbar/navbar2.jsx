@@ -45,7 +45,7 @@ const NavbarTwo = () => {
     <div className="relative">
       {/* Main Navbar */}
       <nav
-        className={`fixed h-21 left-0 right-0 z-50 transition-all duration-300 bg-white`}
+        className={`fixed top-0 h-21 left-0 right-0 z-[999] transition-all duration-300 bg-white`}
       >
         <div className="max-w-7xl mx-auto p-8">
           <div className="flex items-center justify-between">
@@ -133,7 +133,7 @@ const NavbarTwo = () => {
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed inset-0 z-30 transform ${
+        className={`fixed inset-0 z-[1000] transform ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out md:hidden`}
       >

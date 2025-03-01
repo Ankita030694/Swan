@@ -124,7 +124,7 @@ const OurLocation = () => {
      
         
       </div>
-      <Carousel 
+      {/* <Carousel 
       responsive={responsive}
       infinite={true}>
           <div className="about_carousel">
@@ -151,7 +151,7 @@ const OurLocation = () => {
           <div className="about_carousel">
             <img src={about8} alt=""/>
           </div>
-        </Carousel>
+        </Carousel> */}
     </div>
   );
 };
