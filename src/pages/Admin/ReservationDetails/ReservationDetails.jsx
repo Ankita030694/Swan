@@ -62,6 +62,49 @@ function ReservationDetails() {
       : phone; // Return original if parsing fails
   };
 
+  const formatToIndianTime = (timestamp) => {
+    console.log('Received timestamp:', timestamp); // Debug log
+
+    if (!timestamp) return "N/A";
+
+    try {
+      let date;
+      
+      // Handle different timestamp formats
+      if (timestamp.toDate) {
+        // If it's a Firestore Timestamp object
+        date = timestamp.toDate();
+      } else if (timestamp.seconds) {
+        // If it's a seconds-based timestamp
+        date = new Date(timestamp.seconds * 1000);
+      } else if (timestamp._seconds) {
+        // Alternative Firestore format
+        date = new Date(timestamp._seconds * 1000);
+      } else {
+        // Try parsing as regular date
+        date = new Date(timestamp);
+      }
+
+      if (isNaN(date.getTime())) {
+        console.log('Invalid date created:', date);
+        return "N/A";
+      }
+
+      return date.toLocaleString("en-IN", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true,
+        timeZone: "Asia/Kolkata"
+      });
+    } catch (error) {
+      console.error("Error formatting date:", error);
+      return "N/A";
+    }
+  };
+
   // Filter reservations by selected outlet and search query
   useEffect(() => {
     let filtered = reservations;
@@ -227,15 +270,16 @@ function ReservationDetails() {
                       <td className="py-3 px-3 text-center">{res.timing}</td>
                       <td className="py-3 px-3 text-center">
                         {res.date
-                          ? new Date(res.date).toLocaleDateString("en-GB") // Format: DD/MM/YYYY
+                          ? new Date(res.date).toLocaleDateString("en-GB")
                           : "N/A"}{" "}
                         - {res.timeSlot}
                       </td>
-
                       <td className="py-3 px-6 text-center">
                         {res.outlet.title}
                       </td>
-                      <td className="py-3 px-6 text-center">{res.createdAt}</td>
+                      <td className="py-3 px-6 text-center">
+                        {formatToIndianTime(res.createdAt)}
+                      </td>
                     </tr>
                   ))
                 ) : (
