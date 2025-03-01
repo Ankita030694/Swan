@@ -171,21 +171,21 @@ function ReservationDetails() {
       <AdminNavbar />
       <main className="w-screen h-auto bg-white p-4 pt-52">
         <div className="container mx-auto">
-          <h1 className="text-2xl font-bold text-gray-800 mb-4 text-[#e07e90]">
+          <h1 className="text-2xl font-bold text-gray-800 mb-4 text-[#758b6b]">
             Reservation Details
           </h1>
 
           {/* Filters and Search */}
           <div className="flex flex-row-reverse flex-wrap items-center justify-between mb-6 gap-4">
             <div>
-              <button className="bg-[#e07e90] rounded-md p-2" onClick={downloadCSV}>
+              <button className="bg-[#758b6b] text-white rounded-md p-2" onClick={downloadCSV}>
                 Download CSV
               </button>
             </div>
             <div>
               <select
                 id="outletFilter"
-                className="px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="px-4 py-2 border border-[#758b6b] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#758b6b]"
                 value={selectedOutlet}
                 onChange={(e) => setSelectedOutlet(e.target.value)}
               >
@@ -199,7 +199,7 @@ function ReservationDetails() {
             <div>
               <input
                 type="date"
-                className="bg-[#e07e90] rounded-md p-2"
+                className="bg-[#758b6b] text-white rounded-md p-2"
                 value={selectedDate}
                 onChange={(e) => setSelectedDate(e.target.value)}
               />
@@ -208,7 +208,7 @@ function ReservationDetails() {
               <input
                 id="searchBar"
                 type="text"
-                className="px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="px-4 py-2 border border-[#758b6b] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#758b6b]"
                 placeholder="Enter email or name"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -217,9 +217,9 @@ function ReservationDetails() {
           </div>
 
           {/* Reservation Table */}
-          <div className="bg-[#e07e90] shadow-md rounded-lg overflow-hidden">
-            <table className="min-w-full bg-[#CFA177]">
-              <thead className="bg-[#e07e90] text-gray-600 uppercase text-sm leading-normal">
+          <div className="bg-[#758b6b] shadow-md rounded-lg overflow-hidden">
+            <table className="min-w-full bg-[#758b6b]">
+              <thead className="bg-[#758b6b] text-white uppercase text-sm leading-normal">
                 <tr>
                   <th
                     className="py-3 px-6 text-center cursor-pointer"
@@ -258,7 +258,7 @@ function ReservationDetails() {
                   filteredReservations.map((res) => (
                     <tr
                       key={res.id}
-                      className="border-b bg-white border-gray-200 hover:bg-[#e07e90]"
+                      className="border-b bg-white border-gray-200 hover:bg-[#758b6b] hover:text-white"
                     >
                       <td className="py-3 px-3 text-center">{res.name}</td>
                       <td className="py-3 px-3 text-center">{res.email}</td>
@@ -297,7 +297,7 @@ function ReservationDetails() {
                 <tr>
                   <td
                     colSpan="10"
-                    className="py-3 px-6 text-right text-gray-500 bg-[#e07e90]"
+                    className="py-3 px-6 text-right text-white bg-[#758b6b]"
                   >
                     Total queries: {filteredReservations.length}
                   </td>

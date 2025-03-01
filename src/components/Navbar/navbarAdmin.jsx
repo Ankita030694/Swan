@@ -9,6 +9,7 @@ const AdminNavbar = () => {
   const navItems = [
     { name: "CONTACT", path: "/admin/contact" },
     { name: "RESERVATION", path: "/admin/reservation" },
+    { name: "REVIEWS", path: "/addReview" },
   ];
 
   useEffect(() => {
@@ -33,7 +34,7 @@ const AdminNavbar = () => {
     <div className="relative">
       {/* Main AdminNavbar */}
       <nav className={`fixed h-28 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-brown shadow-md' : 'bg-[#e07e90]'
+        isScrolled ? 'bg-brown shadow-md' : 'bg-[#758b6b]'
       }`}>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between">
