@@ -56,7 +56,7 @@ const ReviewDetails = () => {
                   reviews.map((review) => (
                     <tr
                       key={review.id}
-                      className="border-b border-gray-200 hover:bg-brown hover:text-[#CFA177]"
+                      className="border-b border-gray-200 hover:bg-[#758b6b] hover:text-[#ffffff]"
                     >
                       <td className="py-3 px-6 text-left whitespace-nowrap">
                         {review.name || 'N/A'}

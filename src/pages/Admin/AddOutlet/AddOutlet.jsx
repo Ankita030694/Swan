@@ -122,7 +122,7 @@ function AddOutlet() {
                     </p>
                     <button
                       onClick={() => openUpdateModal(outlet)}
-                      className="px-4 py-2 bg-[#ffffff] text-[#000000] rounded-md mt-2 hover:bg-[rgb(120_85_60)]"
+                      className="px-4 py-2 bg-[#ffffff] text-[#000000] rounded-md mt-2 hover:bg-[#758b6b] hover:text-[#ffffff]"
                     >
                       Update
                     </button>

@@ -32,31 +32,30 @@ const Login = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-brown-100">
-            <div className="bg-brown-200 shadow-lg rounded-lg p-8 w-full max-w-md">
-                <h2 className="text-2xl font-bold text-brown-800 text-center mb-6">Login</h2>
+        <div className="min-h-screen flex items-center justify-center bg-white">
+            <div className="shadow-lg rounded-lg p-8 w-full max-w-md">
+                <h2 className="text-2xl font-bold text-[#758b6b] text-center mb-6">Login</h2>
                 <input
                     type="email"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full p-3 mb-4 border border-brown-300 rounded focus:outline-none focus:ring-2 focus:ring-brown-500"
+                    className="w-full p-3 mb-4 border border-[#758b6b] rounded focus:outline-none focus:ring-2 focus:ring-[#758b6b]"
                 />
                 <input
                     type="password"
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="w-full p-3 mb-4 border border-brown-300 rounded focus:outline-none focus:ring-2 focus:ring-brown-500"
+                    className="w-full p-3 mb-4 border border-[#758b6b] rounded focus:outline-none focus:ring-2 focus:ring-[#758b6b]"
                 />
                 <button
                     onClick={handleLogin}
-                    className="w-full bg-brown text-white py-3 rounded hover:bg-brown transition"
+                    className="w-full bg-[#758b6b] text-white py-3 rounded hover:bg-[#5f7154] transition"
                 >
                     Login
                 </button>
-<p>{message}</p>
-
+                <p className="text-red-500 mt-2 text-center">{message}</p>
             </div>
         </div>
     );
