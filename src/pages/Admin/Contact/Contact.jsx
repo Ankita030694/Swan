@@ -57,7 +57,7 @@ function Contact() {
     return (
         <>
             <AdminNavbar />
-            <main className="w-screen h-screen bg-brown px-6 pb-10 pt-52">
+            <main className="w-screen h-screen bg-[#ffffff] px-6 pb-10 pt-52">
                 <div className="container mx-auto">
                    
                     {/* Filters */}
@@ -72,8 +72,8 @@ function Contact() {
                     </div>
 
                     {/* Table */}
-                    <div className="bg-[#CFA177] shadow-md rounded-lg overflow-hidden">
-                        <table className="min-w-full bg-[#CFA177]">
+                    <div className="bg-[#758b6b] shadow-md rounded-lg overflow-hidden">
+                        <table className="min-w-full bg-[#758b6b]">
                             <thead className="bg-gray-300 text-gray-600 uppercase text-sm leading-normal border-b ">
                                 <tr>
                                     <th
@@ -103,7 +103,7 @@ function Contact() {
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody className="text-gray-700 text-sm font-light bg-[#c6a17f]">
+                            <tbody className="text-gray-700 text-sm font-light bg-[#ffffff]">
                                 {filteredQueries.length > 0 ? (
                                     filteredQueries.map((query) => (
                                         <tr

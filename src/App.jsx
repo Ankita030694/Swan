@@ -12,12 +12,14 @@ import Login from './pages/Login/Login';
 import './App.css'
 import Thankyou from './components/Thankyou/Thankyou';
 import AddReview from './pages/Admin/AddReview/AddReview';
+import ReviewDetails from './pages/Admin/Reviews/ReviewDetails';
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Reservation/>} />
+          <Route path="/admin/reviews" element={<ReviewDetails/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<ContactUs/>} />
           <Route path="/reservation" element={<Reservation/>} />

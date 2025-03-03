@@ -16,10 +16,10 @@ function Reservation() {
                 transition={{ duration: 0.5 }}
             >
               
-                <NavbarTwo />
+                {/* <NavbarTwo /> */}
                 {/* <ReservationComponent /> */}
                 <ReservationForm />
-                <Footer />
+                {/* <Footer /> */}
             </motion.div>
 
         </AnimatePresence>

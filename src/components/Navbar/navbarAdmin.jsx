@@ -9,7 +9,7 @@ const AdminNavbar = () => {
   const navItems = [
     { name: "CONTACT", path: "/admin/contact" },
     { name: "RESERVATION", path: "/admin/reservation" },
-    { name: "REVIEWS", path: "/addReview" },
+    { name: "REVIEWS", path: "/admin/reviews" },
   ];
 
   useEffect(() => {
