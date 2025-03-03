@@ -87,7 +87,7 @@ const OurStory = () => {
             viewport={{ once: true, margin: "-100px" }}
             variants={contentVariants}
           >
-           Bo Tai is a modern Thai bar and grill concept that seamlessly blends cosmopolitan Italian design with vibrant Thai elements. With its chic yet cozy ambiance, Bo Tai is crafted for the young, stylish, and socially savvy crowd. The name itself, a playful pun on "bow-tie," reflects the sophistication and bold flavors of its Oriental-inspired cuisine. Combining contemporary Thai and Italian influences, Bo Tai offers a unique culinary experience set against an international backdrop that celebrates both style and flavor.
+           Indulge in a refined fusion of Japanese elegance and Italian comfort at Swan Restaurant. Savor exquisite sushi, delicate sashimi, and handcrafted wood-fired pizzas and pastas, perfectly complemented by artisanal cocktails and mocktails. Nestled in a sophisticated setting with impeccable service, it's the ideal retreat for a relaxed yet luxurious dining experience. All this, paired with breathtaking views of the iconic Qutub Minar, makes every visit truly unforgettable—a must for culinary enthusiasts and culture aficionados alike.
           </motion.p>
 
           {/* Stats */}
