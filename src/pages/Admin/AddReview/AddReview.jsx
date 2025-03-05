@@ -71,6 +71,7 @@ const AddReview = () => {
               {...register("dob")}
               type="date"
               className="w-full p-2 border rounded"
+              required
             />
             <small>Date Of Birth</small>
           </div>
@@ -80,6 +81,7 @@ const AddReview = () => {
               {...register("anniversary")}
               type="date"
               className="w-full p-2 border rounded"
+              required
             />
             <small>Date Of Anniversary</small>
           </div>
