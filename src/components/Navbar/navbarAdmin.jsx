@@ -34,7 +34,7 @@ const AdminNavbar = () => {
     <div className="relative">
       {/* Main AdminNavbar */}
       <nav className={`fixed h-28 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-brown shadow-md' : 'bg-[#758b6b]'
+        isScrolled ? 'bg-[#758b6b] shadow-md' : 'bg-[#758b6b]'
       }`}>
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between">
@@ -47,7 +47,7 @@ const AdminNavbar = () => {
                   key={item.name}
                   href={item.path}
                   className={`text-sm font-medium transition-colors duration-300 ${
-                    isScrolled ? 'text-orange-100 hover:text-gray-600' : 'text-brown-100 font-medium hover:text-orange-100'
+                    isScrolled ? 'text-gray-600 hover:text-gray-600' : 'text-gray-600 hover:text-gray-600'
                   }`}
                 >
                   {item.name}

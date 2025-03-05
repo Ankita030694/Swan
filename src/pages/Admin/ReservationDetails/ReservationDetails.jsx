@@ -217,93 +217,95 @@ function ReservationDetails() {
           </div>
 
           {/* Reservation Table */}
-          <div className="bg-[#758b6b] shadow-md rounded-lg overflow-hidden">
-            <table className="min-w-full bg-[#758b6b]">
-              <thead className="bg-[#758b6b] text-white uppercase text-sm leading-normal">
-                <tr>
-                  <th
-                    className="py-3 px-6 text-center cursor-pointer"
-                    onClick={() => toggleSort("name")}
-                  >
-                    Name{" "}
-                    {sortConfig.key === "name" &&
-                      (sortConfig.direction === "asc" ? "↑" : "↓")}
-                  </th>
-                  <th className="py-3 px-3 text-center">Email</th>
-                  <th className="py-3 px-3 text-center">Country</th>
-                  <th className="py-3 px-3 text-center">Phone</th>
-                  <th className="py-3 px-3 text-center">Persons</th>
-                  <th className="py-3 px-3 text-center">Timing</th>
-                  <th
-                    className="py-3 px-6 text-center cursor-pointer"
-                    onClick={() => toggleSort("date")}
-                  >
-                    Date & Time{" "}
-                    {sortConfig.key === "date" &&
-                      (sortConfig.direction === "asc" ? "↑" : "↓")}
-                  </th>
-                  <th className="py-3 px-6 text-center">Outlet</th>
-                  <th
-                    className="py-3 px-6 text-center cursor-pointer"
-                    onClick={() => toggleSort("createdAt")}
-                  >
-                    Created At{" "}
-                    {sortConfig.key === "createdAt" &&
-                      (sortConfig.direction === "asc" ? "↑" : "↓")}
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="text-gray-700 text-sm font-light">
-                {filteredReservations.length > 0 ? (
-                  filteredReservations.map((res) => (
-                    <tr
-                      key={res.id}
-                      className="border-b bg-white border-gray-200 hover:bg-[#758b6b] hover:text-white"
+          <div className="bg-[#758b6b] shadow-md rounded-lg overflow-x-auto">
+            <div className="min-w-full overflow-x-auto">
+              <table className="min-w-full bg-[#758b6b]">
+                <thead className="bg-[#758b6b] text-white uppercase text-sm leading-normal">
+                  <tr>
+                    <th
+                      className="py-3 px-6 text-center cursor-pointer whitespace-nowrap"
+                      onClick={() => toggleSort("name")}
                     >
-                      <td className="py-3 px-3 text-center">{res.name}</td>
-                      <td className="py-3 px-3 text-center">{res.email}</td>
-                      <td className="py-3 px-3 text-center">{res.countryCode}</td>
-                      <td className="py-3 px-3 text-center">
-                        {formatPhoneNumber(res.phone)}
-                      </td>
-                      <td className="py-3 px-3 text-center">{res.persons}</td>
-                      <td className="py-3 px-3 text-center">{res.timing}</td>
-                      <td className="py-3 px-3 text-center">
-                        {res.date
-                          ? new Date(res.date).toLocaleDateString("en-GB")
-                          : "N/A"}{" "}
-                        - {res.timeSlot}
-                      </td>
-                      <td className="py-3 px-6 text-center">
-                        {res.outlet.title}
-                      </td>
-                      <td className="py-3 px-6 text-center">
-                        {formatToIndianTime(res.createdAt)}
+                      Name{" "}
+                      {sortConfig.key === "name" &&
+                        (sortConfig.direction === "asc" ? "↑" : "↓")}
+                    </th>
+                    <th className="py-3 px-3 text-center whitespace-nowrap">Email</th>
+                    <th className="py-3 px-3 text-center whitespace-nowrap">Country</th>
+                    <th className="py-3 px-3 text-center whitespace-nowrap">Phone</th>
+                    <th className="py-3 px-3 text-center whitespace-nowrap">Persons</th>
+                    <th className="py-3 px-3 text-center whitespace-nowrap">Timing</th>
+                    <th
+                      className="py-3 px-6 text-center cursor-pointer whitespace-nowrap"
+                      onClick={() => toggleSort("date")}
+                    >
+                      Date & Time{" "}
+                      {sortConfig.key === "date" &&
+                        (sortConfig.direction === "asc" ? "↑" : "↓")}
+                    </th>
+                    <th className="py-3 px-6 text-center whitespace-nowrap">Outlet</th>
+                    <th
+                      className="py-3 px-6 text-center cursor-pointer whitespace-nowrap"
+                      onClick={() => toggleSort("createdAt")}
+                    >
+                      Created At{" "}
+                      {sortConfig.key === "createdAt" &&
+                        (sortConfig.direction === "asc" ? "↑" : "↓")}
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="text-gray-700 text-sm font-light">
+                  {filteredReservations.length > 0 ? (
+                    filteredReservations.map((res) => (
+                      <tr
+                        key={res.id}
+                        className="border-b bg-white border-gray-200 hover:bg-[#758b6b] hover:text-white"
+                      >
+                        <td className="py-3 px-3 text-center whitespace-nowrap">{res.name}</td>
+                        <td className="py-3 px-3 text-center whitespace-nowrap">{res.email}</td>
+                        <td className="py-3 px-3 text-center whitespace-nowrap">{res.countryCode}</td>
+                        <td className="py-3 px-3 text-center whitespace-nowrap">
+                          {formatPhoneNumber(res.phone)}
+                        </td>
+                        <td className="py-3 px-3 text-center whitespace-nowrap">{res.persons}</td>
+                        <td className="py-3 px-3 text-center whitespace-nowrap">{res.timing}</td>
+                        <td className="py-3 px-3 text-center whitespace-nowrap">
+                          {res.date
+                            ? new Date(res.date).toLocaleDateString("en-GB")
+                            : "N/A"}{" "}
+                          - {res.timeSlot}
+                        </td>
+                        <td className="py-3 px-6 text-center whitespace-nowrap">
+                          {res.outlet.title}
+                        </td>
+                        <td className="py-3 px-6 text-center whitespace-nowrap">
+                          {formatToIndianTime(res.createdAt)}
+                        </td>
+                      </tr>
+                    ))
+                  ) : (
+                    <tr>
+                      <td
+                        colSpan="10"
+                        className="py-3 px-6 text-center text-gray-500 bg-white"
+                      >
+                        No reservations found.
                       </td>
                     </tr>
-                  ))
-                ) : (
+                  )}
+                </tbody>
+                <tfoot>
                   <tr>
                     <td
                       colSpan="10"
-                      className="py-3 px-6 text-center text-gray-500 bg-white"
+                      className="py-3 px-6 text-right text-white bg-[#758b6b]"
                     >
-                      No reservations found.
+                      Total queries: {filteredReservations.length}
                     </td>
                   </tr>
-                )}
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td
-                    colSpan="10"
-                    className="py-3 px-6 text-right text-white bg-[#758b6b]"
-                  >
-                    Total queries: {filteredReservations.length}
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
+                </tfoot>
+              </table>
+            </div>
           </div>
         </div>
       </main>
