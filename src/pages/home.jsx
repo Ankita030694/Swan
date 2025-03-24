@@ -51,27 +51,29 @@ const Home = () => {
         >
           <NavbarTwo />
           <Header /> 
-          <marquee behavior="scroll" direction="left" className=" bg-[#000000] text-[#ffffff]">
-            <div className="flex items-center bg-[#000000] text-[#ffffff] p-4 gap-3">
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
-              <p className="font-bold text-xl">New Menu is here!</p>
+          <div className="bg-[#000000] text-[#ffffff] overflow-hidden">
+            <div className="whitespace-nowrap inline-block">
+              <marquee behavior="scroll" direction="left" className="inline-block">
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+                <span className="font-bold text-xl px-4">New Menu is here!</span>
+              </marquee>
             </div>
-          </marquee>
+          </div>
           <OurStory /> 
           <BoTaiGallery />
         
