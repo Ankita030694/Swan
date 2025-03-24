@@ -51,9 +51,31 @@ const Home = () => {
         >
           <NavbarTwo />
           <Header /> 
+          <marquee behavior="scroll" direction="left" className=" bg-[#000000] text-[#ffffff]">
+            <div className="flex items-center bg-[#000000] text-[#ffffff] p-4 gap-3">
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+              <p className="font-bold text-xl">New Menu is here!</p>
+            </div>
+          </marquee>
           <OurStory /> 
           <BoTaiGallery />
-          <ReservationBanner />
+        
+          {/* <ReservationBanner /> */}
           <Reviews />
           <Footer />
           {/* Sticky Buttons */}
