@@ -65,7 +65,7 @@ const AdminNavbar = () => {
                   key={item.name}
                   to={item.path}
                   className={`text-sm font-medium transition-colors duration-300 ${
-                    isScrolled ? 'text-gray-100 hover:text-gray-200' : 'text-gray-100 hover:text-gray-200'
+                    isScrolled ? 'text-white hover:text-white' : 'text-white hover:text-white'
                   }`}
                 >
                   {item.name}
