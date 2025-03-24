@@ -79,7 +79,7 @@ const Home = () => {
           <Reviews />
           <Footer />
           {/* Sticky Buttons */}
-          <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 p-1 flex justify-around bg-[#000000] shadow-lg border-2 border-[#ffffff] rounded-lg">
+          <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 p-1 flex justify-around bg-[#000000] shadow-lg rounded-lg">
             <a href="tel:+918130933899">
               <button
                 className="bg-[#000000] text-[#ffffff] p-3 rounded-full w-32"
