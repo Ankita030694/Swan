@@ -27,7 +27,7 @@ const Header = () => {
       {isMobile ? (
         <img 
           src={bannerimg} 
-          className="w-full h-screen object-cover" 
+          className="w-full h-full object-cover" 
           alt="Swan Banner" 
         />
       ) : (
