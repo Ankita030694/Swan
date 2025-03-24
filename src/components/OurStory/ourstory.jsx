@@ -51,7 +51,7 @@ const OurStory = () => {
   };
 
   return (
-    <div className="w-full py-16 px-8 bg-[#fae6e7] relative">
+    <div className="w-full py-16 px-8 bg-[#fae6e7] relative -m-1">
    
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 relative z-10">
         {/* Left side - Title */}
