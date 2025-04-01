@@ -19,17 +19,17 @@ const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, lo
 const LogoSlider = () => {
 
   return (
-   <div className="slider-logo bg-white mt-5">
+   <div className="slider-logo bg-white mt-5 w-full mx-0 px-0">
      <Slider
     width="250px"
     duration={40}
     pauseOnHover={true}
     blurBorders={false}
     blurBorderColor={'#FFD3AF'}
-    
+    className="w-full"
 >
-    {logos.map((img)=> <Slider.Slide >
-        <img src={img }alt="any" className='w-36' />
+    {logos.map((img, index) => <Slider.Slide key={index}>
+        <img src={img} alt={`logo-${index}`} className='w-36' />
     </Slider.Slide>)}
 </Slider>
    </div>

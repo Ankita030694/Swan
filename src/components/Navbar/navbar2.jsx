@@ -45,22 +45,25 @@ const NavbarTwo = () => {
 
   return (
     <div className="relative">
+      {/* Welcome Strip */}
+      <div className="fixed top-0 left-0 right-0 z-[1000] bg-[#758b6b] py-1 text-white text-center text-sm">
+        Welcome to Swan!
+      </div>
+      
       {/* Main Navbar */}
       <nav
-        className={`fixed top-0 h-21 left-0 right-0 z-[999] transition-all duration-300 bg-white`}
+        className={`fixed top-7 left-0 right-0 z-[999] transition-all duration-300 bg-white shadow-sm`}
       >
-        <div className="max-w-7xl mx-auto p-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center justify-between">
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-6">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.path}
-                  className={`text-md font-medium transition-colors duration-300 py-2 px-4 rounded-lg ${
-                    isScrolled
-                      ? "text-dark hover:text-[#000000]"
-                      : "text-dark font-medium hover:text-[#000000]"
+                  className={`text-md font-medium transition-colors duration-300 hover:text-[#758b6b] ${
+                    isScrolled ? "text-dark" : "text-dark"
                   }`}
                 >
                   {item.name}
@@ -70,10 +73,8 @@ const NavbarTwo = () => {
               <div className="relative">
                 <button
                   onClick={toggleMenu}
-                  className={`text-md font-medium transition-colors duration-300 py-2 px-4 rounded-lg ${
-                    isScrolled
-                      ? "text-dark hover:text-[#000000]"
-                      : "text-dark font-medium hover:text-[#000000]"
+                  className={`text-md font-medium transition-colors duration-300 hover:text-[#758b6b] ${
+                    isScrolled ? "text-dark" : "text-dark"
                   }`}
                 >
                   MENU
@@ -97,22 +98,22 @@ const NavbarTwo = () => {
               </div>
             </div>
             {/* Logo */}
-            <div className="flex">
+            <div className="flex justify-center">
               <a href="/">
-                <img src={logo} alt="Logo" className="w-28 h-22" />
+                <img src={logo} alt="Logo" className="w-24 h-auto" />
               </a>
             </div>
             {/* Action Buttons */}
             <div className="hidden md:flex items-center space-x-4">
               <a
                 href="tel:+918130933899"
-                className="px-4 py-2 rounded-lg transition-colors duration-300 border-2 border-[#000000] text-[#000000] hover:bg-[#000000] hover:text-[#ffffff]"
+                className="px-4 py-2 rounded-lg transition-colors duration-300 border border-[#000000] text-[#000000] hover:bg-[#000000] hover:text-[#ffffff]"
               >
                 Call Us
               </a>
               <Link
                 to={"/reservation"}
-                className="px-4 py-2 bg-dark border-2 font-medium rounded-lg text-white bg-[#000000] hover:bg-white hover:text-[#000000] hover:border-2 hover:border-[#000000]"
+                className="px-4 py-2 bg-[#000000] border border-[#000000] font-medium rounded-lg text-white hover:bg-white hover:text-[#000000]"
               >
                 Reservation
               </Link>

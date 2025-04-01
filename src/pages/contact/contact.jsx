@@ -144,7 +144,7 @@ const ContactUs = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full p-4 rounded-md bg-[#758b6b] text-white font-semibold ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-white hover:text-[#000000] hover: border-2 hover:border-[#758b6b]'} transition duration-200`}
+                className={`w-full p-4 text-xl rounded-md bg-[#4e6145] text-white font-bold ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-white hover:text-[#000000] hover: border-2 hover:border-[#758b6b]'} transition duration-200`}
               >
                 {isSubmitting ? 'Submitting...' : 'Submit'}
               </button>
