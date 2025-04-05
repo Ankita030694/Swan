@@ -56,7 +56,7 @@ const responsive = {
 };
 const OurLocation = () => {
   return (
-    <div className="w-full mx-auto bg-[#ffffff] m-10 align-items-center">
+    <div className="w-full mx-auto bg-[#ffffff] align-items-center">
       {/* Header Text and Video */}
       <div className="flex flex-col md:flex-row max-w-6xl mx-auto">
         <div className="w-full md:w-1/2 p-12 flex items-center">
@@ -87,7 +87,7 @@ const OurLocation = () => {
       <LogoSlider />
 
       {/* Locations Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-8 mb-10 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-8 mt-10">
         {/* {locations.map((location, index) => (
           <div
             key={index}
