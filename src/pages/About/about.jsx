@@ -12,15 +12,15 @@ const About = () => {
   return (
     <div className="relative">
       <NavbarTwo />  
-      <div className="w-full bg-[#fae6e7] mt-5">
+      <div className="w-full bg-[#fae6e7] mt-20 pt-4 md:mt-20">
         <div className="">
           <div className="relative">
-            <div className="aspect-[16/9] w-full overflow-hidden rounded-2xl">
+            <div className="aspect-[16/9] md:aspect-[16/9] w-full overflow-hidden rounded-2xl">
               <div className="relative h-full w-full">
                 <img
                   src={aboutheader}
                   alt="Thai dish presentation"
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-center"
                   loading="eager"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60" />

@@ -13,6 +13,7 @@ const NavbarTwo = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
     { name: "ABOUT", path: "/about" },
@@ -41,6 +42,10 @@ const NavbarTwo = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -145,7 +150,16 @@ const NavbarTwo = () => {
           onClick={toggleSidebar}
         ></div>
         <div className="fixed inset-y-0 right-0 max-w-xs w-full bg-white shadow-xl flex flex-col">
-          <div className="flex-1 pt-32 px-4">
+          {/* Welcome container for mobile */}
+          <div className="bg-[#758b6b] w-full py-8 text-white text-center relative">
+            <button 
+              onClick={toggleSidebar}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-200"
+            >
+              <FaX className="text-xl" />
+            </button>
+          </div>
+          <div className="flex-1 pt-24 px-4">
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -156,19 +170,32 @@ const NavbarTwo = () => {
                 {item.name}
               </a>
             ))}
-            {/* Mobile Menu Items */}
-            {menuItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.path}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block py-3 text-base font-medium text-brown rounded-md"
-                onClick={toggleSidebar}
+            {/* Mobile Menu Dropdown */}
+            <div className="py-3">
+              <button 
+                onClick={toggleMobileMenu}
+                className="flex justify-between items-center w-full text-base font-medium text-brown"
               >
-                {item.name}
-              </a>
-            ))}
+                MENU
+                <span className="ml-2">{isMobileMenuOpen ? '▲' : '▼'}</span>
+              </button>
+              {isMobileMenuOpen && (
+                <div className="pl-4 mt-2 space-y-2">
+                  {menuItems.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block py-2 text-base font-medium text-brown rounded-md"
+                      onClick={toggleSidebar}
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
             <div className="mt-6 space-y-4">
               <a href="tel:+919870587770">
                 <button className="w-full px-4 py-2 bg-white text-dark rounded-lg border-2 border-[#000000]">

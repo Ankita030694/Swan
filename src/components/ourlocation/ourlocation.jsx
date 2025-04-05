@@ -68,6 +68,7 @@ const OurLocation = () => {
               autoPlay
               muted
               loop
+              playsInline
             />
           </div>
         </div>
