@@ -19,7 +19,7 @@ const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, lo
 const LogoSlider = () => {
 
   return (
-   <div className="slider-logo bg-white py-4 w-full mx-0 px-0 h-auto">
+   <div className="slider-logo bg-white w-full mx-0 px-0 h-auto">
      <Slider
     width="250px"
     duration={40}
