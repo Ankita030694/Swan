@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { db } from "../../configs/firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
-import review2 from "../../assets/2.png";
+import review2 from "../../assets/review.jpg";
 
 const cardAnimation = {
   initial: { opacity: 0, y: 30 },
