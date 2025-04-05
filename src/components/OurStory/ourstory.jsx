@@ -76,7 +76,7 @@ const OurStory = () => {
 
         {/* Right side - Content */}
         <div className="md:w-2/3 flex flex-col gap-8 text-center">
-        <h2 className="text-[#e07e90] text-6xl font-bold">
+        <h2 className="text-[#e07e90] text-5xl font-bold">
             OUR STORY
           </h2>
           {/* Description */}

@@ -46,7 +46,7 @@ const NavbarTwo = () => {
   return (
     <div className="relative">
       {/* Welcome Strip */}
-      <div className="fixed top-0 left-0 right-0 z-[1000] bg-[#758b6b] py-1 text-white text-center text-sm">
+      <div className="fixed top-0 left-0 right-0 z-[1000] bg-[#758b6b] py-1 text-white text-center text-lg">
         Welcome to Swan!
       </div>
       

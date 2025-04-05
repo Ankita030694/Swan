@@ -13,6 +13,8 @@ import about8 from "../../assets/about/8.jpeg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import LogoSlider from "../LogoSlider/logoslider";
+import SwanVideo from "../../assets/Swan.mp4";
+
 const locations = [
   {
     city: "GOA",
@@ -55,32 +57,31 @@ const responsive = {
 const OurLocation = () => {
   return (
     <div className="w-full mx-auto bg-[#758b6b] m-10 align-items-center">
-      {/* Header Text */}
-      <div className="text-center  max-w-6xl mx-auto">
-        <p className="text-lg text-black pt-12">
-          Regarded as ‘the Prince of Indian cuisine’, Zorawar Kalra, after the
-          successful exit from his maiden venture credited with introducing one
-          of the most awarded regional cuisine restaurant concepts in India,
-          launched Massive Restaurants Pvt. Ltd. in December 2012. Massive
-          Restaurants, spearheaded by Mr. Kalra and mentored by his illustrious
-          father & Czar of Indian Cuisine – Jiggs Kalra, was established with an
-          aim to develop India’s premier brands of restaurants that specialize
-          in targeting all segments of the market, while showcasing the
-          evolution of Indian cuisine and putting Indian food on the global
-          palate permanently. The Company currently operates under critically
-          acclaimed, multi award winning brand verticals of premium Fine-Dining
-          Restaurants with the signature Masala Library by Jiggs Kalra, the
-          Smart-Casual Dining Restaurants with the brand Made in Punjab, the
-          modern Indian bistro concept Farzi Café and modern pan-Asian bistro
-          concept Pa Pa Ya, cuisine agnostic modern ‘freestyle’ bar & kitchen –
-          KODE, high energy dining concept – MasalaBar, offering a cutting edge,
-          post-modern & stylish bar, for an immersive dining experience; and
-          unlimited grill and brewery concept – BBQ’D. Massive Restaurants
-          raises the bar a not­ch higher with the launch of its brand new Modern
-          Thai Bar & Grill concept BO-TAI. With each new concept and new outlet
-          we move one step closer to our vision and continue to revolutionize
-          Indian food and night life.
-        </p>
+      {/* Header Text and Video */}
+      <div className="flex flex-col md:flex-row max-w-6xl mx-auto">
+        <div className="w-full md:w-1/2 p-12 flex items-center">
+          <div className="h-[400px] w-full">
+            <video 
+              src={SwanVideo} 
+              className="w-full h-full object-cover rounded-lg shadow-lg" 
+              controls
+              autoPlay
+              muted
+              loop
+            />
+          </div>
+        </div>
+        <div className="w-full md:w-1/2 p-12 flex items-center">
+          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+            {/* <h3 className="text-2xl font-semibold mb-4 text-[#000000]">Our Story</h3> */}
+            <p className="text-lg text-white leading-relaxed">
+              Nestled in the heart of Mehrauli with a breathtaking view of the iconic Qutub Minar, Swan is more than just a restaurant—it's an experience. We bring together the elegance of Italian cuisine and the precision of Japanese flavors in a space that's both contemporary and soulful. At Swan, every detail matters—from our thoughtfully curated menu to our stylish interiors featuring artistic installations and open-air seating.
+            </p>
+            <p className="text-lg text-white leading-relaxed mt-4">
+              Whether you're joining us for a romantic evening, a celebration, or a leisurely afternoon, Swan offers a perfect balance of ambiance, flavor, and hospitality. Passionate chefs, a curated bar, and impeccable service come together to create moments that linger long after your meal. Welcome to Swan—where fine dining meets timeless charm.
+            </p>
+          </div>
+        </div>
       </div>
       <LogoSlider />
 

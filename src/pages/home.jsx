@@ -51,7 +51,7 @@ const Home = () => {
         >
           <NavbarTwo />
           <Header /> 
-          <div className="bg-[#000000] text-[#ffffff] overflow-hidden">
+          <div className="bg-[#758b6b] text-[#ffffff] overflow-hidden">
             <div className="whitespace-nowrap inline-block">
               <marquee behavior="scroll" direction="left" className="inline-block">
                 <span className="font-bold text-xl px-4">New Menu is here!</span>

@@ -60,7 +60,7 @@ const Reviews = () => {
   return (
     <section className="bg-white py-10">
       <div className="container mx-auto px-4">
-        <h2 className="text-6xl font-bold text-center text-[#000000]" style={{ marginBottom: "50px" }}>
+        <h2 className="text-5xl font-bold text-center text-[#000000]" style={{ marginBottom: "50px" }}>
           What People Say About Us
         </h2>
         
