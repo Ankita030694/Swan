@@ -56,7 +56,7 @@ const responsive = {
 };
 const OurLocation = () => {
   return (
-    <div className="w-full mx-auto bg-[#758b6b] m-10 align-items-center">
+    <div className="w-full mx-auto bg-[#ffffff] m-10 align-items-center">
       {/* Header Text and Video */}
       <div className="flex flex-col md:flex-row max-w-6xl mx-auto">
         <div className="w-full md:w-1/2 p-12 flex items-center">
@@ -72,12 +72,12 @@ const OurLocation = () => {
           </div>
         </div>
         <div className="w-full md:w-1/2 p-12 flex items-center text-center">
-          <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-lg text-center">
+          <div className="bg-[#758b6b]/10 backdrop-blur-sm p-6 rounded-lg shadow-lg text-center">
             {/* <h3 className="text-2xl font-semibold mb-4 text-[#000000]">Our Story</h3> */}
-            <p className="text-lg text-white leading-relaxed text-center">
+            <p className="text-lg text-black leading-relaxed text-center">
               Nestled in the heart of Mehrauli with a breathtaking view of the iconic Qutub Minar, Swan is more than just a restaurant—it's an experience. We bring together the elegance of Italian cuisine and the precision of Japanese flavors in a space that's both contemporary and soulful. At Swan, every detail matters—from our thoughtfully curated menu to our stylish interiors featuring artistic installations and open-air seating.
             </p>
-            <p className="text-lg text-white leading-relaxed mt-4 text-center">
+            <p className="text-lg text-black leading-relaxed mt-4 text-center">
               Whether you're joining us for a romantic evening, a celebration, or a leisurely afternoon, Swan offers a perfect balance of ambiance, flavor, and hospitality. Passionate chefs, a curated bar, and impeccable service come together to create moments that linger long after your meal. Welcome to Swan—where fine dining meets timeless charm.
             </p>
           </div>
