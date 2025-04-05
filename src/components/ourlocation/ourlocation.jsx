@@ -59,7 +59,7 @@ const OurLocation = () => {
     <div className="w-full mx-auto bg-[#ffffff] align-items-center">
       {/* Header Text and Video */}
       <div className="flex flex-col md:flex-row max-w-6xl mx-auto">
-        <div className="w-full md:w-1/2 pr-6 flex items-center pt-5">
+        <div className="w-full md:w-1/2 p-6 flex items-center pt-5">
           <div className="h-[400px] w-full">
             <video 
               src={SwanVideo} 
@@ -72,7 +72,7 @@ const OurLocation = () => {
             />
           </div>
         </div>
-        <div className="w-full md:w-1/2 flex pl-6 items-center text-center pt-5">
+        <div className="w-full md:w-1/2 flex p-6 items-center text-center pt-5">
           <div className="bg-[#758b6b]/10 backdrop-blur-sm p-6 rounded-lg shadow-lg text-center">
             {/* <h3 className="text-2xl font-semibold mb-4 text-[#000000]">Our Story</h3> */}
             <p className="text-lg text-black leading-relaxed text-center">
