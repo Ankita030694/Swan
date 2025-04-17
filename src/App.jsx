@@ -18,8 +18,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Reservation/>} />
-          <Route path="/home" element={<Home/>} />
+          <Route path="/" element={<Home/>} />
+          {/* <Route path="/home" element={<Home/>} /> */}
           <Route path="/admin/reviews" element={<ReviewDetails/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<ContactUs/>} />

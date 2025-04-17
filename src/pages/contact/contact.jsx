@@ -66,22 +66,28 @@ const ContactUs = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col justify-center"
+            className="flex flex-col justify-center space-y-6"
           >
+            {/* Address Division */}
             <div className='shadow-lg bg-white p-8 rounded-lg border-2 border-[#000000]'>
-              <h1 className="text-4xl font-bold text-[#000000] mb-6">Contact Us</h1>
-              <p className="text-gray-700 mb-6">
-              Ward no 1, Kharsra No 1501, 1st Floor, Kalka Das Marg, Mehrauli, New Delhi, Delhi 110030
+              <h2 className="text-2xl font-bold text-[#000000] mb-4">Our Address</h2>
+              <p className="text-gray-700">
+                Ward no 1, Kharsra No 1501, 1st Floor, Kalka Das Marg, Mehrauli, New Delhi, Delhi 110030
               </p>
-              <div className="space-y-4">
-                <p className='text-gray-700'>For franchisee enquiries contact Business Development and Franchising:</p>
+            </div>
+
+            {/* Franchise Enquiries Division */}
+            <div className='shadow-lg bg-white p-8 rounded-lg border-2 border-[#000000]'>
+              <h2 className="text-2xl font-bold text-[#000000] mb-4">Franchise Enquiries</h2>
+              <p className='text-gray-700 mb-4'>For franchisee enquiries contact Business Development and Franchising:</p>
+              <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <span className="text-[#e07e90]">📧</span>
                   <span className="text-gray-700">franchising@massiverestaurants.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="text-[#4A3427]">📞</span>
-                  <span className="text-gray-700">+91 88001 98091</span>
+                  <span className="text-gray-700">+91 81309 33899</span>
                 </div>
               </div>
             </div>
