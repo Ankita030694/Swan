@@ -74,6 +74,10 @@ const ContactUs = () => {
               <p className="text-gray-700">
                 Ward no 1, Kharsra No 1501, 1st Floor, Kalka Das Marg, Mehrauli, New Delhi, Delhi 110030
               </p>
+              <div className="flex items-center space-x-3">
+                  <span className="text-[#4A3427]">📞</span>
+                  <span className="text-gray-700">+91 81309 33899</span>
+                </div>
             </div>
 
             {/* Franchise Enquiries Division */}
@@ -87,7 +91,7 @@ const ContactUs = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="text-[#4A3427]">📞</span>
-                  <span className="text-gray-700">+91 81309 33899</span>
+                  <span className="text-gray-700">+91 88001 98091</span>
                 </div>
               </div>
             </div>
