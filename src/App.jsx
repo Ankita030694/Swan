@@ -13,6 +13,7 @@ import './App.css'
 import Thankyou from './components/Thankyou/Thankyou';
 import AddReview from './pages/Admin/AddReview/AddReview';
 import ReviewDetails from './pages/Admin/Reviews/ReviewDetails';
+import AddRev from './pages/Admin/addrev/AddRev';
 function App() {
   return (
     <>
@@ -31,6 +32,7 @@ function App() {
           <Route path= "/login"  element={<Login/>} />
           <Route path= "/thanks"  element={<Thankyou/>} />
           <Route path= "/addReview"  element={<AddReview/>} />
+          <Route path= "/addRev"  element={<AddRev/>} />
 
          
         </Routes>
