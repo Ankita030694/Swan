@@ -54,15 +54,11 @@ const AddRev = () => {
     <div className="flex flex-col items-center p-6">
       <div className="max-w-md w-full bg-[#fdfbf7] p-6 rounded-lg shadow-lg border border-gray-200">
         <div className="flex justify-center mb-6">
-          <img
-            src={logo}
-            alt="Cedar Logo"
-            className="h-32 w-32 object-contain"
-          />
+            <h1 className="text-2xl font-bold">Feedback Form</h1>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-          <div className="flex justify-between items-center">
+          {/* <div className="flex justify-between items-center">
             <div className="flex items-center">
               <span className="mr-2">Date no:</span>
               <input 
@@ -79,7 +75,7 @@ const AddRev = () => {
                 className="w-20 border rounded px-2 py-1" 
               />
             </div>
-          </div>
+          </div> */}
 
           <div className="space-y-2">
             <div className="flex flex-col">
